@@ -1,0 +1,668 @@
+﻿/*----- GENERALES-----*/
+
+@font-face{
+	font-family:titulo;
+	src:url("../fonts/titulo.otf");
+}
+@font-face{
+	font-family:subtitulo;
+	src:url("../fonts/subtitulo.ttf");
+}
+@font-face{
+	font-family:texto;
+	src:url("../fonts/texto_parrafos.ttf");
+}
+@font-face{
+	font-family:texto1;
+	src:url("../fonts/texto.ttf");
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	font-family:texto;
+	background-color:black;
+	background-image:url(../img/banner-cosmere.png);
+	background-size:contain;
+	background-position:center center;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	color:white;
+	width:100%;
+}
+
+/* -----CABECERA PARA TODOS----- */
+
+div.contenedor{
+	background:linear-gradient(black, transparent);
+}
+header a[href*="html"] img{
+	display:block;
+	width:10%;
+	float:left;
+	margin:2%;
+	border-radius:50%;
+}
+header a[href*="html"] img:hover{
+	box-shadow:0 0 0.5em 0.1em #696969;
+}
+header h1{
+	float:left;
+	width:85%;
+	font-family:titulo;
+	font-size:2.5em;
+	padding-top:5%;
+	padding-bottom:2%;
+	text-shadow:0.2em 0.2em 0.2em #5d5d5d;
+}
+/*-----MENU NAVEGACION LATERAL-----*/
+nav.menu ul.img_menu{
+	font-family:texto1;
+	float:right;
+	width:20%;
+	position:relative;
+	list-style-type:none;
+}
+nav ul.img_menu>li p{
+	float:left;
+	padding-bottom:0.2em;
+	position:relative;
+	width:30%;
+	margin-top:10%;
+	color:white;
+	font-size:2em;
+	cursor:default;
+}
+ul.img_menu>li img{
+	margin-right:0.6em;
+	position:absolute;
+	top:0%;
+	right:-75%;
+	width:50%;
+}
+nav ul.invisible{
+	position:absolute;
+	list-style-type:none;
+	display:none;
+	background-color:rgba(68,68,68,0.7);
+	width:135%;
+	top:90%;
+	right:50%;
+	margin-top:2%;
+	padding-bottom:1em;
+}
+nav.menu ul.img_menu>li:hover p{
+	text-shadow:0 0 0.2em #ACACAC;
+}
+nav.menu ul.img_menu>li:hover ul.invisible{
+	display:block;
+}
+nav.menu li.primario{
+	padding:1em;
+	text-align:center;
+	font-family:subtitulo;
+}
+nav.menu li.primario a{
+	font-size:1.5em;
+	color:white;
+	text-decoration:none;
+}
+nav.menu li.primario a:hover{
+	font-family:subtitulo;
+	font-size:1.5em;
+	color:white;
+	text-shadow:0.2em 0.2em 0.5em white;
+}
+li.primario~ul{
+	list-style-type:none;
+	font-family:texto;
+}
+li.primario~ul li{
+	border-top:0.1em solid white;
+}
+li.primario~ul li:last-child{
+	border-bottom:0.1em solid white;
+}
+li.primario~ul li a{
+	padding:0.5em 1em;
+	display:block;
+	text-decoration:none;
+	color:white;
+}
+li.primario~ul li a:hover{
+	padding-left:1.2em;
+	text-decoration:none;
+	color:white;
+	background-color:rgba(255, 255, 255, 0.2);
+	text-shadow:0.2em 0.2em 0.5em black;
+}
+li.primario~ul li a:focus{
+	padding-left:1em;
+	text-decoration:none;
+	color:black;
+	background-color:rgba(213, 213, 213, 0.2);
+	text-shadow:0.2em 0.2em 0.5em white;
+}
+/*-----SUBMENU PARA INDEX-----*/
+nav.submenu{
+	width:94%;
+	margin:0 auto;
+	clear:both;
+	padding:1.5em;
+	font-size:1em;
+}
+nav.submenu ul{
+	font-family:texto1;
+	margin-top:5%;
+	height:2.9em;
+	list-style-type:none;
+	background:linear-gradient(to right, black, #5D5D5D, black);
+}
+nav.submenu ul li{
+	float:left;
+	width:20%;
+	text-align:center;
+}
+nav.submenu li a{
+	display:block;
+	text-decoration:none;
+	color:white;	
+	padding-top:0.8em;
+	padding-bottom:0.8em;
+}
+nav.submenu li a:hover{
+	border-bottom:0.1em solid #d5d5d5;
+	background-color:rgba(255, 255, 255, 0.2);	
+}
+/*----- ZONA DE CONTENIDO-----*/
+section{
+	width:90%;
+	margin:0 auto;
+	font-size:1.2em;
+}
+section article h2{
+	font-family:subtitulo;
+	text-align:center;
+	font-size:1.2em;
+	margin:auto;
+	margin-top:10%;
+	margin-bottom:1.5%;
+	padding:0.3em;
+	background-color:rgba(93, 93, 93 ,0.9);
+	border-radius:1em;
+	text-shadow:0px 0px 0.2em black;
+	cursor:default;	
+}
+section a[href*="roshar"] img{
+	display:block;
+	width:90%;
+	margin:auto;
+	border:0.1em double #d5d5d5;
+	border-radius:1em;
+	margin-bottom:2%;
+}
+section h3{
+	font-family:texto;
+	text-align:center;
+	font-size:1.2em;
+	margin:auto;
+	padding:0.3em;
+	background-color:rgba(93, 93, 93 ,0.9);
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	text-shadow:0 0 0.2em black;
+	cursor:default;
+	box-shadow:0em 0em 0.5em 0.1em white;
+}
+section p{
+	clear:both;
+	text-align:justify;
+	margin-bottom:1.5%;
+	padding:1em;
+	background-color:rgba(200,200,200,0.8);
+	color:black;
+	column-count:2;
+}
+section p:last-child{
+	margin-bottom:0;
+}
+/*----LATERAL CON REDES SOCIALES-----*/
+div.redes{
+	position:absolute;
+	position:fixed;
+	top:52%;
+	left:0%;
+	width:4.5%;
+	background-color:rgba(105,105,105,0.4);
+}
+div.redes a img[src*="e"]{
+	display:block;
+	width:70%;
+	margin:0 auto;
+	margin-top:0.5em;
+	margin-bottom:0.6em;
+	border-radius:50%;
+}
+div.redes a img[src*="face"]:hover{
+	box-shadow:0 0 0.5em 0.2em #2449B6;
+}
+
+div.redes a img[src*="youtube"]:hover{
+	box-shadow:0 0 0.5em 0.2em #B20000;
+}
+
+div.redes a img[src*="twitter"]:hover{
+	box-shadow:0 0 0.5em 0.2em #00B5CE;
+}
+div.redes a img[src*="ico_em"]{
+	background-color:#D9B1FF;
+}
+div.redes a img[src*="ico_em"]:hover{
+	box-shadow:0 0 0.5em 0.2em #D9B1FF;
+}
+
+/*-----PIE DE PAGINA PARA TODOS-----*/
+footer{
+	margin:0;
+	font-variant:small-caps;
+	font-size:1.2em;
+	width:100%;
+}
+footer article.menu_inferior{
+	padding:1em 1.5em 1.5em 1.5em;
+	font-family:texto1;
+	font-size:1em;
+	margin-bottom:2.7%;
+}
+footer article.menu_inferior ul{
+	height:2.9em;
+	list-style-type:none;
+	background:linear-gradient(to right, black, #5D5D5D, black);
+}
+footer article.menu_inferior ul li{
+	float:left;
+	width:25%;
+	text-align:center;	
+}
+footer article.menu_inferior li a{
+	display:block;
+	text-decoration:none;
+	color:white;	
+	padding-top:0.9em;
+	padding-bottom:0.8em;
+}
+footer article.menu_inferior li a:hover{
+	text-decoration:underline;
+	color:white;
+	background-color:rgba(200,200,200,0.8);
+}
+footer div.arriba{
+	width:5%;
+	float:right;
+	margin-top:-4%;
+	margin-right:2%;
+	border-radius:25%;
+	margin-bottom:4%;
+}
+footer div.arriba a{
+	display:block;
+	width:100%;
+	border-radius:2em;
+	background:linear-gradient(to top, rgba(93, 93, 93,0.8), rgba(170, 170, 170,0.8));
+}
+footer div.arriba a:hover{
+	background:linear-gradient(rgba(83, 83, 83,0.8), rgba(150, 150, 150,0.8),rgba(83, 83, 83,0.8));
+}
+footer div.arriba a img{
+	display:block;
+	border-radius:2em;
+	width:100%;
+}
+footer div.arriba a:hover img{
+	box-shadow:0em 0em 0.2em 0.2em white;
+}
+footer p{
+	float:left;
+	margin-top:-3%;
+	padding-left:2.5%;
+	width:30%;
+}
+footer div.der{
+	display:block;
+	width:20%;
+	float:right;
+	margin-top:-3%;
+}
+footer span a{
+	display:block;
+	text-decoration:none;
+	color:white;
+}
+
+/*-----PAGINA DE PLANETAS, INICIO-----*/
+
+/* SUBMENU DE PLANETAS */
+
+nav.submenu-planetas{
+	width:100%;
+	margin:0 auto;
+	clear:both;
+	padding:1.5em;
+	font-family:texto;
+	font-size:1em;
+}
+nav.submenu-planetas ul{
+	margin-top:5%;
+	height:2.9em;
+	list-style-type:none;
+	background:linear-gradient(to right, black, #5D5D5D, black);
+}
+nav.submenu-planetas ul li{
+	float:left;
+	width:11%;
+	text-align:center;
+}
+nav.submenu-planetas li a{
+	display:block;
+	text-decoration:none;
+	color:white;	
+	padding:0.8em 0;
+}
+nav.submenu-planetas li a:hover{
+	border-bottom:0.1em solid #d5d5d5;
+	background-color:rgba(255, 255, 255, 0.2);	
+}
+/* INICIO CONTENIDO PLANETAS */
+
+section.planetas h2{
+	margin-bottom:0;
+	border-radius:0;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+}
+section.planetas p{
+	column-count:1;
+	margin-bottom:5%;
+}
+section.planetas p:last-child{
+	margin-bottom:0;
+}
+section.planetas article img[src*="planetas"]{
+	display:block;
+	width:90%;
+	margin:auto;
+	border:0.1em double #d5d5d5;
+	border-radius:15px;
+}
+article small{
+	padding-left:0.2em;
+	font-variant:small-caps;
+	display:block;
+	width:90%;
+	margin:auto;
+	margin-bottom:2%;
+}
+
+/*-----PERSONAJES INICIO-----*/
+
+/* SUBMENU PERSONAJES */
+
+nav.submenu-personajes{
+	width:99%;
+	margin:0 auto;
+	clear:both;
+	padding:1.5em;
+	font-family:texto;
+	font-size:1em;
+}
+nav.submenu-personajes ul{
+	margin-top:5%;
+	height:2.9em;
+	list-style-type:none;
+	background:linear-gradient(to right, black, #5D5D5D, black);
+}
+nav.submenu-personajes ul li{
+	float:left;
+	width:33%;
+	text-align:center;
+}
+nav.submenu-personajes li a{
+	display:block;
+	text-decoration:none;
+	color:white;	
+	padding:0.8em 0;
+}
+nav.submenu-personajes li a:hover{
+	background-color:rgba(255, 255, 255, 0.2);	
+	border-bottom:0.1em solid #d5d5d5;
+}
+/*-----CONTENIDO PERSONAJES-----*/
+section.personajes{
+	clear:both;
+}
+section.personajes h2{
+	margin-bottom:2%;
+	font-size:1.2em;
+}
+section.personajes h3{
+	margin-bottom:0;
+}
+section.personajes div.img_personajes{
+	width:60%;
+	margin:0 auto;
+}
+section.personajes div.img_personajes img[src*="kaladin1.jpg"]{
+	display:block;
+	width:48%;
+	float:left;
+	margin-bottom:5%;
+	margin-top:2%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes div.img_personajes img[src*="kaladin2.png"]{
+	display:block;
+	width:48%;
+	float:right;
+	margin-bottom:5%;
+	margin-top:5%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes div.img_personajes img[src*="shallan1"]{
+	display:block;
+	width:48%;
+	float:right;
+	margin-bottom:5%;
+	margin-top:8%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes div.img_personajes img[src*="shallan2"]{
+	display:block;
+	width:48%;
+	float:left;
+	margin-bottom:5%;
+	margin-top:2%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes div.img_personajes img[src*="shallan.jpg"]{
+	display:block;
+	width:90%;
+	margin:0 auto;
+	margin-bottom:5%;
+	margin-top:2%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes div.img_personajes img[src*="dalinar.jpg"]{
+	display:block;
+	width:48%;
+	float:left;
+	margin-bottom:5%;
+	margin-top:4%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes div.img_personajes img[src*="dalinar2"]{
+	display:block;
+	width:48%;
+	float:right;
+	margin-bottom:5%;
+	margin-top:2%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes div.img_personajes img[src*="dalinar1.jpg"]{
+	display:block;
+	width:48%;
+	float:left;
+	margin-bottom:5%;
+	margin-top:2%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes div.img_personajes img[src*="dalinar3"]{
+	display:block;
+	width:48%;
+	float:right;
+	margin-bottom:5%;
+	margin-top:3%;
+	border:0.1em double white;
+	border-radius:2em;
+}
+section.personajes h3{
+	clear:both;
+}
+
+/*----- LIBROS INICIO -----*/
+/* SUBMENU LIBROS */
+nav.submenu-libros{
+	width:100%;
+	margin:0 auto;
+	clear:both;
+	padding:1.5em;
+	font-family:texto;
+	font-size:1em;
+}
+nav.submenu-libros ul{
+	margin-top:5%;
+	height:2.9em;
+	list-style-type:none;
+	background:linear-gradient(to right, black, #5D5D5D, black);
+}
+nav.submenu-libros ul li{
+	float:left;
+	width:20%;
+	text-align:center;
+}
+nav.submenu-libros ul li:first-child{
+	width:18%;
+}
+nav.submenu-libros ul li:last-child{
+	width:18%;
+}
+nav.submenu-libros ul li.mistborn2{
+	width:24%;
+}
+nav.submenu-libros li a{
+	display:block;
+	text-decoration:none;
+	color:white;	
+	padding:0.8em 0;
+}
+nav.submenu-libros li a:hover{
+	border-bottom:0.1em solid #d5d5d5;
+	background-color:rgba(255, 255, 255, 0.2);	
+}
+
+/*-----CONTENIDO LIBROS-----*/
+
+section.libros img[src*="libros.jpg"]{
+	display:block;
+	margin:0 auto;
+	width:60%;
+	border:0.1em double #d5d5d5;
+	border-radius:2em;
+}
+section.libros article h2~h2{
+	margin-top:5%;
+}
+div.portadas{
+	width:50%;
+	margin:0 auto;
+}
+div.portadas img{
+	border:0.1em double #d5d5d5;
+	border-radius:0.5em;
+}
+div.portadas img:first-child{
+	margin-right:2%;
+	float:left;
+	width:48%;
+	margin-bottom:5%;
+}
+div.portadas img:last-child{
+	margin-left:2%;
+	float:right;
+	width:48%;
+	margin-bottom:5%;
+}
+section.libros h3,h2{
+	clear:both;
+}
+div.portadas img[src*="emperador.jpg"]{
+	margin-top:2.5%;
+}
+div.portadas img[src*="radiantes1"]{
+	margin-top:5%;
+}
+div.portadas img[src*="ritmo.jpg"]{
+	margin-top:0.7%;
+}
+div.portadas img[src*="aleacion.jpg"]{
+	margin-top:0.7%;
+}
+div.portadas img[src*="sombras.jpg"]{
+	margin-top:0.8%;
+}
+div.portadas img[src*="brazales.jpg"]{
+	margin-top:0.8%;
+}
+div.portadas img[src*="arena1.jpg"]{
+	margin-top:1%;
+}
+div.portadas img[src*="arcanum1.jpg"]{
+	margin-top:1%;
+}
+div.comprar{
+	clear:both;
+	margin-bottom:3%;
+}
+div.comprar p.boton{
+	background-color:transparent;
+	font-size:1.2em;
+	font-family:titulo;
+	padding:0;
+	width:15%;
+	column-count:1;
+	margin:0 auto;
+}
+div.comprar p.boton a{
+	display:block;
+	text-align:center;
+	padding:1em;
+	text-decoration:none;
+	border-radius:2em;
+	background:radial-gradient(#d5d5d5,black);
+	color:white;
+	text-shadow:0.1em 0.1em 0.2em black;
+}
+div.comprar p.boton a:hover{
+	background:radial-gradient(black,#d5d5d5);
+	color:white;
+	text-shadow:0.1em 0.1em 0.2em black;
+}

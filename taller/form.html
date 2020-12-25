@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+	<head>
+		<title>Talleres Miguel</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/css.css" type="text/css"/>
+		<link rel="icon" href="img/icon.png" type="image/png"/>
+	</head>
+	<body>
+		<div id="contenido">
+			<!-- CABECERA -->
+			<header>
+				<div class="logotipo">
+					<img src="img/logotipo.png" alt="logotipo_empresa"/>
+				</div>
+				<div class="titulo_cabecera">
+					<h1>TALLERES MIGUEL</h1>
+				</div>
+				<nav class="navegacion">
+					<ul>
+						<li><a href="index.html">Nosotros</a></li>
+						<li><a href="galeria.html">Galería</a></li>
+						<li><a href="videos.html">Vídeos</a></li>
+						<li><a href="mapa_img.html">Motor: Partes</a></li>
+						<li><a href="form.html">Solicitar Presupuesto</a></li>
+						<li><a href="docs/pdf.rar" download>Descargar PDF</a></li>
+					</ul>
+				</nav>
+				<div class="flecha">
+					<a href="#oculto"><img src="img/flecha.png" alt="flecha" /></a>
+				</div>
+				<nav id="oculto">
+					<div class="cruz">
+						<a href="#"><img src="img/x.png" alt="img" /></a>
+					</div>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="galeria.html">Galería</a></li>
+						<li><a href="videos.html">Vídeos</a></li>
+						<li><a href="mapa_img.html">Motor: Partes</a></li>
+						<li><a href="form.html">Solicitar Presupuesto</a></li>
+						<li><a href="docs/pdf.rar" download>Descargar PDF</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- INICO DE CONTENIDO -->
+			<article>
+				<h2>Solicitud de presupuesto</h2>
+				<form>
+					<span class="nombre">
+						<label for="nombre">Nombre:</label>
+						<input id="nombre" type="text" name="nombre" value="" maxlength="30"   placeholder="Escribe tu nombre"/>
+					</span>
+					<span class="apellido">
+						<label for="apellido">Apellidos:</label>
+						<input id="apellido" type="text" name="apellido" value="" maxlength="30"   placeholder="Escribe tus apellidos"/>
+					</span>
+					<span class="asunto">
+						<label>Asunto a tratar</label>
+						<label><input type="radio" name="asunto"> Pedir presupuesto web.</label>
+						<label><input type="radio" name="asunto"> Solicitar servicio de Grúa.</label>
+						<label><input type="radio" name="asunto"> Otros.</label>
+					</span>
+					<span class="conocido">
+						<label for="conocido">¿Como nos has conocido?</label>
+						<label><input type="checkbox" name="amigo" />Un amigo</label>
+						<label><input type="checkbox" name="google" />Googleando</label>
+						<label><input type="checkbox" name="buzon" />Buzoneo</label>
+						<label><input type="checkbox" name="otros" />Otros (especifique)
+						<input class="oculto" type="text" name="otros_especificar" maxlength="20" /></label>
+					</span>
+					<span class="texto">
+						<label>Escribe tu mensaje</label>
+						<textarea name="mensaje" cols="40" rows="10" maxlength="300"></textarea>
+					</span>
+					<span class="privacidad">
+						<label><input type="checkbox" name="politica" required /> He leído y acepto el <a href="#">aviso legal y la política de privacidad</a>.</label>
+					</span>
+					<input type="submit" name="enviar" value="Enviar"/>
+				</form>
+				<div class="publi">
+					<p>Van a ser textos con lorem ipsum por que me da toda la pereza escribir cosas en estos párrafos.</p>
+					<img src="img/publi.png" alt="publi"/>
+					<img src="img/publi1-1.jpg" alt="publi"/>
+				</div>
+				<div class="rueda">
+					<a href="https://www.ruedasnuevas.com/"><img src="img/rueda.png" alt="Rueda" title="Neumáticos Nuevos"/></a>
+				</div>
+			</article>
+			<!-- PIE DE PÁGINA -->
+			<footer>
+				<p><a href="mailto:talleresmiguel@ruedasnuevas.es">Contacta con nosotros vía e-mail.</a></p>
+				<span><a href="../index.html" target="_self"><img src="img/ico_em.png" alt="" title="Volver a Mis Proyectos"/></a>Miguel Ángel Cerezuela Cabrera &copy;2020. Todos los derechos reservados.</span>
+			</footer>
+		</div>
+	</body>
+ </html>

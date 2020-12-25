@@ -1,0 +1,131 @@
+﻿*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+div.contenido{
+	width:30%;
+	margin:0 auto;
+	margin-top:1em;
+	font-family:arial;
+	box-shadow:0 0 0.2em 0em gray;
+	border-radius:0.5em;
+}
+div.titulo{
+	border-bottom:1px solid #CECECE;
+	width:100%;
+	margin:0;
+	padding:1em;
+}
+div.titulo p{
+	color:#4F4F4F;
+}
+form{
+	padding:1em;
+}
+span.nombre,span.apellido{
+	width:50%;
+	float:left;
+}
+span.nombre input,span.apellido input{
+	padding:0.8em 0.5em;
+	width:98%;
+	background-color:#F5F5F5;
+	border:1px solid #CECECE;
+	border-radius:5px;
+	font-size:1.1em;
+}
+span.apellido input{
+	float:right;
+	width:98%;
+}
+span.email input,span.contraseña input{
+	width:100%;
+	padding:0.8em 0.5em;
+	margin-top:0.5em;
+	background-color: #F5F5F5;
+	border:1px solid #CECECE;
+	border-radius:5px;
+	font-size:1.1em;
+}
+span.contraseña input{
+	margin-bottom:1em;
+}
+span.fecha{
+	display:block;
+	margin-bottom:2%;
+}
+span.fecha label,span.sexo>label{
+	font-size:0.8em;
+	color:#858586;
+	display:block;
+	margin-bottom:1%;
+}
+span.fecha select{
+	width:32.59%;
+	padding:0.8em 0.5em;
+	border:1px solid #CECECE;
+	border-radius:5px;
+}
+span.sexo{
+	display:block;
+	width:100%;
+}
+span.sexo span{
+	padding:0.5em;
+	border:1px solid #CECECE;
+	border-radius:5px;
+	float:left;
+}
+span.sexo span.h,span.sexo span.m{
+	width:25%;
+	margin-right:3%;
+}
+span.sexo span.p{
+	width:44%;
+	margin-bottom:2%;
+}
+span.sexo span input{
+	float:right;
+	height:18px;
+}
+span.boton{
+	clear:both;
+	display:block;
+}
+span.boton label{
+	font-size:0.8em;
+	color:#858586;
+	display:block;
+	margin-bottom:5%;
+}
+span.boton input{
+	display:block;
+	margin:0 auto;
+	
+	font-weight:bold;
+	font-size:1.5em;
+	color:white;
+	background-color:#11A005;
+	border:none;
+	border-radius:0.3em;
+	padding:0.2em 2em;
+}
+span.boton label a{
+	text-decoration:none;
+	color:#023093;
+}
+div.project{
+	width:20%;
+	margin:0 auto;
+	padding-bottom:4%;
+}
+div.project img{
+	background-color:#D9B1FF;
+	border-radius:50%;
+	display:block;
+	width:100%;
+}
+div.project:hover img{
+	box-shadow:0 0 0.5em 0.2em #D9B1FF;
+}
