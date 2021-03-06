@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+	<head>
+		<title>Librería de libros</title>
+		<meta charset="UTF-8" />
+		<meta name= "description"
+		 content="Librería" />
+		<meta name="Keywords"
+		 content= "libros,libreria" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Javascript --> 
+		<script type="text/javascript" src="../js/js.js" defer="true" ></script>
+		
+		<!-- Hojas de estilo -->
+		<link rel="stylesheet" href="../css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="../css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="../css/moviles.css" media="screen and (orientation: portrait)" type="text/css" />
+
+		
+		<!-- otros link -->
+		<link rel="icon" href="../media/img/icon.png" type="image/png"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+	</head>
+	<body class="somos">
+		<header id="arriba">
+			<div class="titulo">
+				<img src="../media/img/flechaFantasia.png" alt="Flecha" />
+				<h1>La Librería Friki</h1>
+				<img src="../media/img/flechaFantasia.png" alt="Flecha" />
+			</div>
+			
+			<img class="muestra" src="../media/img/flechaIzq.png" alt="Img"/>
+			
+			<div class="cambioColor">
+				<div class="usuario">
+					<p class="oculto">Bienvenido, <span id="nombreUsuario"></span></p>
+					<form id="formNombre" name="form_nombre">
+						<input name="user" type="text" placeholder="Insertar Usuario" value="" />
+						<button type="button" id="nombre">Aceptar</button>
+					</form>
+					
+					<img src="../media/img/usuario.png" alt="usuario"/>	
+				</div>
+				<div class="tema">
+					<p>¿Qué tema quieres?</p>
+					<form name="color">
+						<label>
+							<img src="../media/img/colores/naranja.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/general.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/verde.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/verde.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/azul.png" alt="color" class="muestraColor"/>
+							<input type="radio" name="colores" value="../css/azul.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/morado.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/morado.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/rosa.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/rosa.css"/>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="menu">
+				<nav>
+					<ul id="menu">
+						<li><a href="../index.html">Portada</a></li>
+						<li id="desplegar"><a>Categ. Libros</a></li>
+						<ul id="submenu">
+							<li><a href="comic.html">Cómics</a></li>
+							<li><a href="avent.html">Aventuras</a></li>
+							<li><a href="romant.html">Románticas</a></li>
+						</ul>
+						<li><a href="somos.html">Quiénes somos</a></li>
+						<li><a href="recomendados.html">Libros Recom.</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="somos">
+			<h2>QUIÉNES SOMOS</h2>
+			<p>Libreria Frikis es un espacio que hemos creado desde Cegal para que encuentres libros comercializados en España. y LATAM.</p>
+			
+			<p> Te ofrecemos realizar búsquedas sobre más de un millón y medio de referencias, de los cuales podemos ofrecerte dónde comprar un total de 1.565.475 libros.</p>
+			
+			<video controls>
+				<source src="../media/vid/video.mp4" type="video/mp4" />
+			</video>
+
+			<p>Hoy tenemos 4.134.504 libros, pero esta cifra va creciendo poco a poco. También te ofrecemos datos reales de las ventas en librerías españolas, dándote la oportunidad de conocer los 100 libros más vendidos.</p>
+
+			<p>Todos Tus Libros pretende acercarte al mundo del libro de una forma sencilla y eficaz. Seguiremos mejorando para conseguirlo...</p>
+			
+			<h3>Dónde encontrarnos</h3>
+			
+			<div class="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3942.4017470777967!2d-0.49147347412148973!3d38.34698263131563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1614202175224!5m2!1ses!2ses" width="600" height="450" ></iframe>
+			</div>
+			<div class="info">
+				<img src="../media/img/cegal.jpg" alt="" />
+				<ul>
+					<li>Denominación social: Confederación Española de Gremios y Asociaciones de Librerías (CEGAL)</li>
+					<li>NIF: G78217064</li>
+					<li>Domicilio: C/ Santiago Rusiñol, Nº8, 28040 - Madrid (Madrid)</li>
+					<li>Datos de Registro: Inscrita Registro Nacional de Asociaciones, Grupo 1º, Sección 1ª, Número Nacional 168761</li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<span>Miguel Ángel Cerezuela &copy;2020</span>
+			<span><a href="#">Política de Privacidad</a></span>
+			<span><a href="#">Términos y condiciones</a></span>
+			<a href="#arriba"><img src="../media/img/flechaArriba.png" title="Ir arriba"/></a>
+		</footer>
+	</body>
+ </html>

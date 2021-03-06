@@ -1,0 +1,658 @@
+﻿/* GENERALES */
+*{
+	margin:0 auto;
+	padding:0;
+	box-sizing:border-box;
+}
+@font-face{
+	font-family:cite;
+	src:url("../media/font/Recursive.ttf");
+}
+@font-face{
+	font-family:subtitulo;
+	src:url("../media/font/Bornywale.otf");
+}
+@font-face{
+	font-family:texto;
+	src:url("../media/font/Metropolis.otf");
+}
+body{
+	width:75%;
+	margin:0 auto;
+	background-color:#FDEFBA;
+	font-family:texto;
+	background-image:url(../media/img/fondo1.png);
+	background-size:100%;
+	background-position:center;
+}
+button{
+	outline:none;
+}
+
+/* CABECERA Y FOOTER PARA TODOS */
+header{
+	background-image:url("../media/img/fondo_cabecera.jpg");
+	background-size:cover;
+	background-position:bottom;
+	background-repeat:no-repeat;
+	padding-top:1em;
+}
+header .titulo{
+	width:89%;
+	font-family:'Playfair Display';
+	font-size:2.05em;
+}
+header .titulo img{
+	width:20.45%;
+	float:left;
+}
+header .titulo h1{
+	position:relative;
+	margin:1%;
+	margin-bottom:0.5em;
+	text-shadow: -1px -1px white, 1px 1px #333;
+	float:left;
+}
+header .titulo img:first-child{
+	transform:rotateZ(180deg);
+}
+
+/*------------Fin Cabecera----------*/
+/* NOMBRE USUARIO Y CAMBIO DE COLOR */
+div.cambioColor{
+	width:12.5%;
+	position:fixed;
+	top:0;
+	right:0;
+	background-image:url("../media/img/bg_user.png");
+	background-size:cover;
+	background-position:top left;
+	background-repeat:no-repeat;
+	border-bottom-left-radius:30%;
+	border-bottom-right-radius:30%;
+}
+img.muestra{
+	display:none;
+}
+div.cambioColor .usuario p{
+	float:left;
+	width:68%;
+	text-align:center;
+	color:#F3DB80;
+	margin-top:3%;
+	margin-left:2%;
+	font-weight:bold;
+	font-size:1.1em;
+	line-height:1em;
+	font-family:texto;
+	text-shadow: 0.1em 0.1em black;
+}
+.usuario form{
+	margin-top:4%;
+	margin-left:4%;
+	float:left;
+	width:62%;
+}
+.usuario form input{
+	display:block;
+	margin-bottom:2%;
+	width:100%;
+	padding:0.2em;
+	border-radius:0.5em;
+	border:0.2em solid #F0D56F;
+	transition-property:border;
+	transition-duration:250ms;
+	outline:none;
+}
+.usuario form input:focus{
+	border:0.2em solid #FDEFBA;
+}
+.usuario form button{
+	display:block;
+	width:60%;
+	margin:0 auto;
+	border:0.2em solid #F0D56F;
+	background-color:#FDEFBA;
+	transition-property:border,background-color;
+	transition-duration:250ms;
+	border-radius:0.5em;
+}
+.usuario form button:hover{
+	border:0.2em solid #FDEFBA;
+	background-color:#F0D56F;
+}
+div.cambioColor .usuario img{
+	width:25%;
+	float:right;
+	margin-top:4%;
+	margin-bottom:4%;
+	margin-right:5%;
+}
+div.tema{
+	padding-top:5%;
+	clear:both;
+	background-color:black;
+	border-bottom-left-radius:30%;
+	border-bottom-right-radius:30%;
+}
+div.tema p{
+	color:#FDEFBA;
+	text-align:center;
+	margin-bottom:3%;
+	padding:1%;
+}
+div.tema form{
+	overflow:hidden;
+	padding-left:8.5%;
+}
+div.tema form input{
+	display:none;
+}
+div.tema form img.muestraColor{
+	display:block;
+	margin:0 auto;
+	width:1.5em;
+	height:1.5em;
+	cursor:pointer;
+	border-radius:50%;
+	float:left;
+	margin-left:2%;
+	margin-bottom:5%;
+}
+
+/*------ FIN USUARIO Y TEMA -----*/
+
+/* MENUS */
+div.menu{
+	clear:both;
+	position:relative;
+}
+div.menu nav{
+	width:100%;
+	overflow:hidden;
+	margin:0 auto; 
+	font-family:cite;
+}
+div.menu ul#menu>li{
+	list-style-type:none;
+	text-align:center;
+	width:25%;
+	float:left;
+}
+div.menu ul#menu li a{
+	display:block;
+	padding:0.8em;
+	text-align:center;
+	background-color:black;
+	border:0.1em solid transparent;
+	border-right:0.1em solid #FDEFBA;
+	text-decoration:none;
+	color:#F9DF7C;
+	transition-property:border,color;
+	transition-duration:250ms;
+}
+div.menu ul#menu li:last-child a{
+	border-right:none;
+}
+div.menu ul#menu li a:hover{
+	color:#FDEFBA;
+	border:0.1em solid #F9DF7C;
+	text-shadow:0.1em 0.1em 0.2em #F9DF7C;
+}
+div.menu ul#menu li#desplegar{
+	cursor:context-menu;
+}
+div.menu ul#menu ul#submenu{
+	width:25%;
+	position:absolute;
+	left:25%;
+	top:100%;
+	visibility:hidden;
+	opacity:0;
+	transition-property:visibility,opacity;
+	transition-duration:500ms;
+}
+div.menu ul#menu li#desplegar:hover+ul#submenu{
+	visibility:visible;
+	opacity:1;
+}
+div.menu ul#menu ul#submenu:hover{
+	visibility:visible;
+	opacity:1;
+}
+div.menu ul#submenu li{
+	width:100%;
+	list-style-type:none;
+	text-align:center;
+}
+div.menu ul#submenu li a{
+	border:0.1em solid black;
+	border-top:0.1em solid #FDEFBA;
+}
+/*-----------FIN DE LOS MENUS----------*/
+/* SECTION GENERAl */
+section{
+	background-color:white;
+	padding:0.8em;
+	overflow:hidden;
+}
+section h2{
+	border-radius:2em;
+	margin-bottom:0.3em;
+	font-family:subtitulo;
+	font-size:3em;
+	text-align:center;
+	background-color:#FDEFBA;
+}
+
+/* SECTION INDEX.HTML */
+section#index{
+	column-count:2;
+	column-rule: 0.4em double #FDEFBA;
+}
+section#index p{
+	text-align:justify;
+	margin:2%;
+}
+section#index span{
+	font-size:1em;
+	font-family:cite;
+	font-variant:small-caps;
+	text-align:justify;
+}
+section#index span img{
+	display:block;
+	width:90%;
+	margin:0 auto;
+}
+section#index span span{
+	display:block;
+	width:90%;
+}
+section#index img[src*="libreria"]{
+	display:block;
+	margin-top:2%;
+	margin-bottom:2%;
+	width:92%;
+}
+section#index span a{
+	font-weight:bold;
+	text-decoration:none;
+	color:#F9DF7C;
+	font-size:1.2em;
+	font-family:texto;
+	text-shadow:0.1em 0.1em black;
+	transition-property:color;
+	transition-duration:250ms;
+}
+section#index span a:hover{
+	font-weight:bold;
+	text-decoration:none;
+	color:#FDEFBA;	
+}
+/*---------FIN SECTION INDEX.HTML-----------*/
+
+/* SECTION GENERAL DE COMIC.HTML,AVENT.HTML y ROMANT.HTML*/
+section h3{
+	font-size:1.8em;
+	text-align:center;
+	margin-bottom:2%;
+	padding-bottom:0.2em;
+	border-bottom:0.4em double #F0D56F;
+	color:#F0D56F;
+	text-shadow:0.05em 0.05em black;
+	clear:both;
+}
+section#comic h2,section#avent h2,section#romant h2{
+	clear:both;
+}
+section#comic,section#avent,section#romant{
+	text-align:justify;
+}
+section#avent p,section#comic p,section#romant p{
+	margin:1em 0.8em;
+}
+section#avent img+p,section#comic img+p,section#romant img+p{
+	padding-top:1.5em;
+}
+section#comic img,section#avent img,section#romant img{
+	display:block;
+	margin:0 auto;
+	float:left;
+	width:25%;
+	padding:1em;
+	margin-bottom:2%;
+	border-right:0.4em double #F0D56F;
+	margin-right:1em;
+}
+span.compra{
+	width:15%;
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+span.compra a{
+	padding:0.5em;
+	border-radius:0.5em;
+	display:block;
+	text-decoration:none;
+	font-weight:bold;
+	color:black;
+	font-family:subtitulo;
+	font-size:1.2em;
+	margin-bottom:1.5em;
+	background-color:#FDEFBA;
+	border:0.2em solid #ECBE24;
+	box-shadow:inset -0.2em -0.2em 0.2em #F0D56F;
+	transition-property:background-color,color;
+	transition-duration:250ms;
+}
+span.compra a:hover{
+	background-color:#F0D56F;
+	box-shadow:inset -0.3em -0.3em 0.3em #FDEFBA;
+}
+
+/* SOMOS.HTML */
+
+#somos p{
+	text-align:justify;
+	margin-bottom:0.5em;
+}
+#somos video{
+	width:70%;
+	display:block;
+	margin:0 auto;
+	margin-bottom:1%;
+}
+#somos div.mapa{
+	float:left;
+	width:55%;
+	margin-left:2%;
+}
+#somos div.info{
+	float:right;
+	width:38%;
+	margin-right:2%;
+}
+#somos iframe{
+	display:block;
+	margin:0 auto;
+	border:0.4em double #F0D56F;
+	border-radius:1em;
+	width:100%;
+}
+#somos img{
+	display:block;
+	width:20%;
+}
+#somos ul li{
+	margin-top:2%;
+	list-style-image:url('../media/img/flechalado.png');
+	list-style-position:inside;
+}
+
+/* RECOMENDADOS.HTML */
+
+div#recomendados .libros{
+	width:31.2%;
+	float:left;
+	margin:1%;
+	height:27.68em;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+div#recomendados .libros.emerson{
+	background-image:url("../media/img/libros/recomendados/emerson.jpg");
+}
+div#recomendados .libros.deseo{
+	background-image:url("../media/img/libros/recomendados/deseo.jpg");
+}
+div#recomendados .libros.extrater{
+	background-image:url("../media/img/libros/recomendados/extraterrestre.jpg");
+}
+div#recomendados .libros.anna{
+	background-image:url("../media/img/libros/recomendados/anna.jpg");
+}
+div#recomendados .libros.nunca{
+	background-image:url("../media/img/libros/recomendados/nunca_fuimos.jpg");
+}
+div#recomendados .libros.mierda{
+	background-image:url("../media/img/libros/recomendados/mierda.jpg");
+}
+
+/* CORTINILLA HOVER SOBRE CADA IMAGEN */
+div#recomendados .cortina h4{
+	color:black;
+	border-radius:2em;
+	margin-bottom:0.3em;
+	font-family:subtitulo;
+	font-size:1.2em;
+	text-align:center;
+	background-color:#FDEFBA;
+}
+div#recomendados p{
+	text-align:center;
+}
+div#recomendados .cortina{
+	padding:2%;
+	height:26.4em;
+	color:white;
+	background-color: rgba(20,20,20,0.8);
+	visibility:hidden;
+	opacity:0;
+	transition-property:visibility,opacity;
+	transition-duration:500ms;
+}
+div#recomendados p.sinopsis.sinopOculta{
+	margin:2%;
+	text-align:justify;
+}
+div#recomendados .libros.emerson:hover div.cortina{
+	visibility:visible;
+	opacity:1;
+}
+div#recomendados .libros.deseo:hover div.cortina{
+	visibility:visible;
+	opacity:1;
+}
+div#recomendados .libros.extrater:hover div.cortina{
+	visibility:visible;
+	opacity:1;
+}
+div#recomendados .libros.anna:hover div.cortina{
+	visibility:visible;
+	opacity:1;
+}
+div#recomendados .libros.nunca:hover div.cortina{
+	visibility:visible;
+	opacity:1;
+}
+div#recomendados .libros.mierda:hover div.cortina{
+	visibility:visible;
+	opacity:1;
+}
+p.mostrar{
+	visibility:visible;
+	opacity:1;
+}
+#recomendados .cortina button{
+	width:38%;
+	display:block;
+	margin:0 auto;
+	color:black;
+	margin-top:5%;
+	margin-bottom:5%;
+	font-family:texto;
+	font-size:0.9em;
+	text-align:center;
+	padding:0.5em;
+	border-radius:0.5em;
+	border:0.2em solid #F0D56F;
+	background-color:#FDEFBA;
+	transition-property:border,background-color;
+	transition-duration:250ms;
+	cursor:pointer;
+	outline:none;
+}
+div#recomendados .cortina button:hover{
+	border:0.2em solid #FDEFBA;
+	background-color:#F0D56F;
+}
+
+.sinopOculta{
+	visibility:hidden;
+	opacity:0;
+	transition-property:visibility,opacity;
+	transition-duration:250ms;
+}
+
+/* seccion y form recomendar */
+.oculto{
+	padding-top:3%;
+	display:none;
+}
+h2#oculto{
+	clear:both;
+	display:none;
+}
+div.recomendar{
+	background-image:url('../media/img/icon.png');
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	background-size:42%;
+}
+div.recomendar p{
+	margin:1%;
+}
+div.recomendar label{
+	display:block;
+	float:left;
+	width:100%;
+	margin:0.5%;
+}
+input{
+	outline:none;
+}
+div.recomendar label[for="opinion"]{
+	display:block;
+	margin-bottom:0.5%;
+}
+div.recomendar input{
+	outline:none;
+	border:0.2em solid #F0D56F;
+	border-radius:0.5em;
+	padding:0.2em;
+	transition-property:border;
+	transition-duration:250ms;
+}
+div.recomendar input:focus{
+	border:0.2em solid #FDEFBA;
+	padding-left:0.2em;
+}
+div.recomendar p.contador{
+	margin:0;
+	margin-left:1%;
+}
+div.recomendar textarea{
+	padding:0.5%;
+	outline:none;
+	resize:none;
+	width:52%;
+	height:200px;
+	margin-left:1%;
+	border:0.2em solid #F0D56F;
+	border-radius:1em;
+	transition-property:border;
+	transition-duration:250ms;
+}
+div.recomendar textarea:focus{
+	border:0.2em solid #FDEFBA;
+}
+div.recomendar p#max{
+	width:52%;
+	margin:0;
+	margin-right:2%;
+	text-align:right;
+}
+.recomendar #boton{
+	display:block;
+	width:10%;
+	margin-top:-1.2%;
+	margin-left:22%;
+	font-family:texto;
+	padding:0.5em 1em;
+	border:0.2em solid #F0D56F;
+	background-color:#FDEFBA;
+	cursor:pointer;
+	outline:none;
+}
+.recomendar #boton:hover{
+	border:0.2em solid #FDEFBA;
+	background-color:#F0D56F;
+}
+#recomendadosUsuario{
+	overflow:hidden;
+}
+#recomendadosUsuario img{
+	display:block;
+	width:5%;
+	margin:0 auto;
+	margin-top:1%;
+}
+#recomendadosUsuario span{
+	display:block;
+	text-align:center;
+	margin-bottom:1%;
+	font-family:cite;
+	font-size:1.5em;
+}
+#recomendadosUsuario h3{
+	width:80%;
+	clear:both;
+	border-radius:1em;
+}
+#recomendadosUsuario p{
+	width:90%;
+	font-family:texto;
+	text-align:justify;
+	margin-bottom:2%;
+	word-wrap: break-word;
+	text-indent:1em;
+}
+#recomendadosUsuario b{
+	width:90%;
+	display:block;
+	margin-bottom:0.5%;
+}
+/* FOOTER */
+footer{
+	background-color:black;
+	padding:1em;
+	color:#FDEFBA;
+	overflow:hidden;
+}
+footer img{
+	position:fixed;
+	bottom:2%;
+	right:4.5%;
+	width:3%;
+}
+footer span{
+	border-right:1px solid #FDEFBA;
+	text-align:center;
+	display:block;
+	float:left;
+	width:33.333334%;
+}
+footer span:nth-child(3){
+	border-right:0.1em solid transparent;
+}
+footer span a{
+	text-decoration:none;
+	color :#FDEFBA;
+}
+footer span a:hover{
+	color:#F9DF7C;
+	transition-property:color,text-decoration;
+	transition-duration:250ms;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+	<head>
+		<title>Librería de libros</title>
+		<meta charset="UTF-8" />
+		<meta name= "description"
+		 content="Librería" />
+		<meta name="Keywords"
+		 content= "libros,libreria" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Javascript --> 
+		<script type="text/javascript" src="js/js.js" defer="true" ></script>
+		
+		<!-- Hojas de estilo -->
+		<link rel="stylesheet" href="css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="css/moviles.css" media="screen and (orientation: portrait)" type="text/css" />
+		
+		<!-- otros link -->
+		<link rel="icon" href="media/img/icon.png" type="image/png"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header id="arriba">
+			<div class="titulo">
+				<img src="media/img/flechaFantasia.png" alt="Flecha" />
+				<h1>La Librería Friki</h1>
+				<img src="media/img/flechaFantasia.png" alt="Flecha" />
+			</div>
+			
+			<img class="muestra" src="media/img/flechaIzq.png" alt="Img"/>
+			
+			<div class="cambioColor">
+				<div class="usuario">
+					<p class="oculto">Bienvenido, <span id="nombreUsuario"></span></p>
+					<form id="formNombre" name="form_nombre">
+						<input name="user" type="text" placeholder="Insertar Usuario" value="" />
+						<button type="button" id="nombre">Aceptar</button>
+					</form>
+					
+					<img src="media/img/usuario.png" alt="usuario"/>	
+				</div>
+				<div class="tema">
+					<p>¿Qué tema quieres?</p>
+					<form name="color">
+						<label>
+							<img src="media/img/colores/naranja.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="css/general.css"/>
+						</label>
+						
+						<label>
+							<img src="media/img/colores/verde.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="css/verde.css"/>
+						</label>
+						
+						<label>
+							<img src="media/img/colores/azul.png" alt="color" class="muestraColor"/>
+							<input type="radio" name="colores" value="css/azul.css"/>
+						</label>
+						
+						<label>
+							<img src="media/img/colores/morado.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="css/morado.css"/>
+						</label>
+						
+						<label>
+							<img src="media/img/colores/rosa.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="css/rosa.css"/>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="menu">
+				<nav>
+					<ul id="menu">
+						<li><a href="index.html">Portada</a></li>
+						<li id="desplegar"><a>Categ. Libros</a></li>
+						<ul id="submenu">
+							<li><a href="html/comic.html">Cómics</a></li>
+							<li><a href="html/avent.html">Aventuras</a></li>
+							<li><a href="html/romant.html">Románticas</a></li>
+						</ul>
+						<li><a href="html/somos.html">Quiénes somos</a></li>
+						<li><a href="html/recomendados.html">Libros Recom.</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="index">
+			<h2>Sobre el Día del Libro</h2>
+			<p>El Día Internacional del Libro es una conmemoración celebrada cada <b>23 de abril</b> a nivel mundial con el objetivo de <b>fomentar la lectura, la industria editorial y la protección de la propiedad intelectual por medio del derecho de autor.</b> Desde 1988, es una celebración internacional promovida por la UNESCO.</p>
+			
+			<img src="media/img/libreria.jpg" alt="libreria"/>
+			
+			<p>Fue natural que la Conferencia General de la UNESCO, celebrada en París en 1995, decidiera rendir un homenaje universal a los libros y autores en esta fecha, alentando a todos, y en particular a los jóvenes, a descubrir el placer de la lectura y a valorar las irreemplazables contribuciones de aquellos quienes han impulsado el progreso social y cultural de la humanidad. Respecto a este tema, la UNESCO creó el Día Mundial del Libro y del Derecho de Autor, así como el Premio UNESCO de Literatura Infantil y Juvenil Pro de la Tolerancia.</p>
+			
+			<span><img alt="23abril" src="media/img/diaLibro.jpg"/><span>
+			El 15 de junio de 1989 se inició en varios países, y en 2010 la celebración ya había alcanzado más de cien.<a href="https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_del_Libro" target="_blank"> Link a Wikipedia</a></span></span>			
+		</section>
+		<footer>
+			<span>Miguel Ángel Cerezuela &copy;2020</span>
+			<span><a href="#">Política de Privacidad</a></span>
+			<span><a href="#">Términos y condiciones</a></span>
+			<a href="#arriba"><img src="media/img/flechaArriba.png" title="Ir arriba"/></a>
+		</footer>
+	</body>
+ </html>

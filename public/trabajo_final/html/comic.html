@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+	<head>
+		<title>Librería de Comics</title>
+		<meta charset="UTF-8" />
+		<meta name= "description"
+		 content="Librería" />
+		<meta name="Keywords"
+		 content= "libros,libreria" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Javascript --> 
+		<script type="text/javascript" src="../js/js.js" defer="true" ></script>
+		
+		<!-- Hojas de estilo -->
+		<link rel="stylesheet" href="../css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="../css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="../css/moviles.css" media="screen and (orientation: portrait)" type="text/css" />
+		
+		<!-- otros link -->
+		<link rel="icon" href="../media/img/icon.png" type="image/png"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header id="arriba">
+			<div class="titulo">
+				<img src="../media/img/flechaFantasia.png" alt="Flecha" />
+				<h1>La Librería Friki</h1>
+				<img src="../media/img/flechaFantasia.png" alt="Flecha" />
+			</div>
+			
+			<img class="muestra" src="../media/img/flechaIzq.png" alt="Img"/>
+			
+			<div class="cambioColor">
+				<div class="usuario">
+					<p class="oculto">Bienvenido, <span id="nombreUsuario"></span></p>
+					<form id="formNombre" name="form_nombre">
+						<input name="user" type="text" placeholder="Insertar Usuario" value="" />
+						<button type="button" id="nombre">Aceptar</button>
+					</form>
+					
+					<img src="../media/img/usuario.png" alt="usuario"/>	
+				</div>
+				<div class="tema">
+					<p>¿Qué tema quieres?</p>
+					<form name="color">
+						<label>
+							<img src="../media/img/colores/naranja.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/general.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/verde.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/verde.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/azul.png" alt="color" class="muestraColor"/>
+							<input type="radio" name="colores" value="../css/azul.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/morado.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/morado.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/rosa.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/rosa.css"/>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="menu">
+				<nav>
+					<ul id="menu">
+						<li><a href="../index.html">Portada</a></li>
+						<li id="desplegar"><a>Categ. Libros</a></li>
+						<ul id="submenu">
+							<li><a href="comic.html">Cómics</a></li>
+							<li><a href="avent.html">Aventuras</a></li>
+							<li><a href="romant.html">Románticas</a></li>
+						</ul>
+						<li><a href="somos.html">Quiénes somos</a></li>
+						<li><a href="recomendados.html">Libros Recom.</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<!-- Menú de navegacion y cabecera -->
+		<section id="comic">
+			<div class="niños">
+				<h2 id="niños">PARA NIÑOS</h2>
+				
+				<h3>Cazapesadillas 2</h3>
+				<img src="../media/img/libros/cazapesadillas.jpg" alt="libro1" />
+				<p class="sinopsis">El primer capítulo nos sirve para recordar el argumento del primer libro y, así, reengancharnos a la historia. Nuevamente escribe Max Chatarra en primera persona, un robot que antes vivía en lo peorcito de Londres, con su «madre» Piper, y ahora se ha mudado a la mansión de Lord Mortimer, un pequeño conde arruinado que vive con su tía abuela, la científica Erika von Kraft… que está muerta. Y es un fantasma.</p>
+					
+				<p class="sinopsis"><i>Nos conocimos los cuatro cazando espíritus y luego nos hicimos amigos. Lo típico. Al final se nos ocurrió ganarnos la vida atrapando malvados espectros del más allá.</i></p>
+					
+				<p class="sinopsis">El problema era que no había clientes ni fantasmas. ¡Mal negocio!</p>
+				
+				<p class="sinopsis">Los Cazapesadillas viven hambrientos y aburridos en la mansión de lord Mortimer. Nadie parece interesado en contratarlos para cazar monstruos. Pero en los periódicos londinenses empiezan a repetirse las noticias sobre jóvenes desaparecidos en mitad de la noche... ¿qué estará ocurriendo?</p>
+				<span class="compra"><a href="">Comprar</a></span>
+				
+				<h3>La vida secreta de los virus</h3>
+				<img src="../media/img/libros/virus.jpg" alt="libro2" />
+				<p class="sinopsis">Siguiendo la línea de libros anteriores con La vida secreta de los virus vamos a tener en nuestras manos a una auténtica joya, a medio camino entre el álbum ilustrado y el libro divulgativo infantil. Sin duda esta colección brilla con luz propia entre todos los maravillosos libros de conocimiento para niños, cada vez con más éxito dentro de la literatura infantil. Pocos libros pueden presumir de ofrecer tanta información, tan interesante, de un modo tan ameno y tan bien ilustrados.</p>
+
+				<p class="sinopsis">Una de las claves de La vida secreta de los virus es su sentido del humor y la naturalidad con la que tratan todos los temas.</p>
+				<span class="compra"><a href="">Comprar</a></span>
+			</div>
+			<div class="adolescentes">
+				<h2 id="adol">PARA ADOLESCENTES</h2>
+				
+				<h3>Harley Quinn. Cristales Rotos</h3>
+				<img src="../media/img/libros/cristales.jpg" alt="libro3" />
+				<p class="sinopsis">Deslenguada, rebelde, excéntrica... A los quince años, Harleen Quinzel apenas tiene cinco dólares cuando la mandan a vivir a Gotham. Harleen se ha tenido que enfrentar a un montón de situaciones difíciles desde muy joven, pero su fortuna cambia cuando la drag queen más fabulosa de Gotham, Mama, la acoge entre los suyos. Y al principio parece que Harleen ha encontrado un lugar en el que crecer y dar rienda suelta a su yo más auténtico junto a su mejor amiga Ivy en Gotham High. Pero entonces la fortuna de Harley da un nuevo giro cuando el cabaret drag de Mama se convierte en la siguiente víctima de la ola de gentrificación que está asolando el vecindario.</p>
+				<p class="sinopsis">Ahora Harleen está muy enfadada. Y a la hora de convertir su rabia en acción deberá elegir entre dos opciones: unirse a Ivy, quien está haciendo campaña para convertir el barrio en un lugar mejor en el que vivir, o unirse al Joker, quien planea destruir Gotham acabando con una corporación tras otra.</p>
+				<span class="compra"><a href="">Comprar</a></span>
+				
+				<h3>Clara y las sombras</h3>
+				<img src="../media/img/libros/clara.jpg" alt="libro4" />
+				<p class="sinopsis">1988, Estados Unidos. Clara, una niña con epilepsia, se muda con su padre a una nueva ciudad después de que su madre los abandone. Clara siempre se ha sentido atormentada por sombras amenazantes que nunca ha entendido. Sin amigos e insegura, sus nuevos compañeros de clase se burlan de ella hasta que se encuentra con un grupo de amigos con los que crea un vínculo especial. Cuando los abusones de la escuela comienzan a desaparecer y la policía sospecha que puede ser el trabajo de un asesino en serie, Clara y sus amigos descubren una verdad aún más aterradora. ¿Podrá Clara enfrentarse a sus miedos y salvar a los niños que han desaparecido?</p>
+				<span class="compra"><a href="">Comprar</a></span>
+			</div>
+			<div class="adultos">
+				<h2 id="adul">PARA ADULTOS</h2>
+				
+				<h3>Black Kiss</h3>
+				<img src="../media/img/libros/kiss.jpg" alt="libro5" />
+				<p class="sinopsis">La historia se ambienta en una ciudad de Los Ángeles sucia y degradada que parece extraída de una novela de James Ellroy, y comienza con un asesinato y un robo. Una prostituta llamada Dagmar mata con una bomba incendiaria a un sacerdote y a otra prostituta que lo atiende en ese momento. La elección de un procedimiento homicida tan llamativo es que Dagmar quiere asegurarse de que se destruye una bobina de película con material muy peligroso que le han enviado al cura desde el Vaticano. Lo que no sabe la asesina es que mientras el padre disfrutaba de los servicios sexuales de la prostituta, una mujer disfrazada de monja había entrado en su casa para apoderarse de la película en cuestión, escapando con ella justo antes de la detonación.</p>
+				<p class="sinopsis">Más tarde ese mismo día, Cass Pollack, músico de jazz en horas bajas, adicto a la heroína e individuo de escasa fibra moral, sale de un tratamiento de desintoxicación para dirigirse al motel donde le aguardan su futura exmujer y su hija de tres años. Pero antes que él llegan dos matones con los que tiene cuentas pendientes, las asesinan y se sientan a esperarle para liquidarlo también en cuanto aparezca.</p>
+				<span class="compra"><a href="">Comprar</a></span>
+				
+				<h3>Preacher</h3>
+				<img src="../media/img/libros/preacher.jpg" alt="libro6" />
+				<p class="sinopsis">
+				Génesis, producto de la prohibida unión entre ángel y demonio, es como un niño sin sentido de voluntad individual. Sin embargo, al estar compuesto por divinidad pura y maldad pura, podría tener poder suficiente como para rivalizar con el de Dios. En otras palabras, Jesse Custer, unido a Génesis, se convierte en el ser más poderoso de la Creación.</p>
+
+				<p class="sinopsis">Durante el curso de su viaje, los tres se enfrentan a diversos enemigos y obstáculos tanto sagrados como profanos, incluyendo al Santo de los Asesinos, un invencible y bien armado ángel de la muerte que responde exclusivamente a la autoridad de Dios; un asesino en serie; El Grial, una organización secreta que controla los más importantes gobiernos mundiales y protege el linaje de Jesucristo; Herr Starr, aparentemente Patriarca del Grial, un megalomaníaco con una obsesión por las prostitutas, que desea a Custer para sus propios fines; diferentes ángeles caídos; y la propia “familia” de Jesse – especialmente su repugnante abuela cajún, su poderoso guardaespaldas Jody, y el “amante de los animales” T.C.</p>	
+				<span class="compra"><a href="">Comprar</a></span>
+			</div>
+		</section>
+		<!-- Seccion dividida en partes -->
+		<footer>
+			<span>Miguel Ángel Cerezuela &copy;2020</span>
+			<span><a href="#">Política de Privacidad</a></span>
+			<span><a href="#">Términos y condiciones</a></span>
+			<a href="#arriba"><img src="../media/img/flechaArriba.png" title="Ir arriba"/></a>
+		</footer>
+		<!-- footer con terminos y politicas (copyright) -->
+	</body>
+ </html>

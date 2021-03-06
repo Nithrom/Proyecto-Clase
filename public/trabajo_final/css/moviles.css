@@ -1,0 +1,206 @@
+﻿/* Generales */
+
+body{
+	width:98%;
+	margin:0 auto;
+}
+header{
+	background-image:url("../media/img/fondo_cabecera1.jpg");
+	background-size:cover;
+	background-position:bottom;
+	background-repeat:no-repeat;
+	padding-top:1em;
+}
+header .titulo{
+	width:73%;
+	font-size:1.2em;
+}
+header .titulo img{
+	display:none;
+}
+
+/* Nombre usuario y cambio color */
+div.cambioColor{
+	width:45%;
+	position:fixed;
+	top:30%;
+	right:-46%;
+	transition-property:right;
+	transition-duration:500ms;
+}
+img.muestra{
+	width:8%;
+	display:block;
+	position:fixed;
+	top:30%;
+	right:-2%;
+}
+header>img.muestra:hover~div.cambioColor{
+	right:0;
+}
+div.cambioColor:hover{
+	right:0;
+}
+div.tema{
+	padding-top:2%;
+	overflow:hidden;
+	padding-bottom:0.5em;
+	border-bottom-left-radius:1.5em;
+	border-bottom-right-radius:1.5em;
+}
+div.tema p{
+	margin-bottom:1%;
+	padding:0.5%;
+}
+div.tema form label{
+	display:block;
+	width:19%;
+	float:left;
+	padding:0.2%;
+}
+div.tema form img.muestraColor{
+	display:block;
+	margin:0 auto;
+	width:1.8em;
+	height:1.8em;
+}
+
+/* Menús */
+
+div.menu{
+	font-size:1em;
+}
+div.menu ul#menu>li a{
+	padding-top:1em;
+	padding-bottom:1em;
+}
+div.menu ul#menu>li:first-child a{
+	padding-top:1.6em;
+	padding-bottom:1.6em;
+}
+div.menu ul#submenu{
+	width:24.9%;
+	left:24.9%;
+}
+
+/* Section General */
+section h2{
+	font-size:1.4em;
+	padding:0.2em;
+}
+
+/* Section comic, avent,romant */
+
+section h3{
+	font-size:1.5em;
+}
+section#avent p,section#comic p,section#romant p{
+	margin-bottom:0.8em;
+}
+section#comic img,section#avent img,section#romant img{
+	width:55%;
+	padding:0.8em;
+}
+span.compra{
+	width:25%;
+}
+
+/* Section Somos.html */
+#somos div.mapa{
+	width:100%;
+	display:block;
+	margin-left:0;
+	margin:0 auto;
+}
+#somos iframe{
+	width:100%;
+}
+#somos div.info{
+	width:100%;
+	padding:0.5em;
+}
+
+/* SEction recomendados */
+
+div#recomendados .cortina{
+	height:82%;
+	font-size:0.8em;
+}
+div#recomendados .cortina button{
+	width:60%;
+	margin-bottom:0%;
+}
+div#recomendados .libros{
+	height:13em;
+}
+div#recomendados .libros:first-child .sinopOculta{
+	width:95%;
+	margin:0 auto;
+	padding-left:5%;
+	color:black;
+	position:absolute;
+	left:0%;
+	top:78%;
+}
+div#recomendados .libros:nth-child(2) .sinopOculta{
+	width:95%;
+	margin:0 auto;
+	padding-left:5%;
+	color:black;
+	position:absolute;
+	left:0%;
+	top:78%;
+}
+div#recomendados .libros:nth-child(3) .sinopOculta{
+	width:95%;
+	margin:0 auto;
+	padding-left:5%;
+	color:black;
+	position:absolute;
+	left:0%;
+	top:78%;
+}
+div#recomendados .libros:nth-child(4) .sinopOculta{
+	width:95%;
+	margin:0 auto;
+	padding-left:5%;
+	color:black;
+	position:absolute;
+	left:0%;
+	top:78%;
+}
+div#recomendados .libros:nth-child(5) .sinopOculta{
+	width:95%;
+	margin:0 auto;
+	padding-left:5%;
+	color:black;
+	position:absolute;
+	left:0%;
+	top:78%;
+}
+div#recomendados .libros:last-child .sinopOculta{
+	width:95%;
+	margin:0 auto;
+	padding-left:5%;
+	color:black;
+	position:absolute;
+	left:0%;
+	top:78%;
+}
+div#recomendados .libros:nth-child(4){
+	margin-bottom:7.5em;
+}
+div#recomendados div.libros button.cerrarSinopsis{
+	margin-top:2%;
+	width:30%;
+}
+.recomendar #boton{
+	width:20%;
+	margin-left:18%;
+}
+.oculto{
+	padding-top:1%;
+}
+footer span:nth-child(2),footer span:nth-child(3){
+	padding-top:0.5em;
+}

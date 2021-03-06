@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+	<head>
+		<title>Librería de libros</title>
+		<meta charset="UTF-8" />
+		<meta name= "description"
+		 content="Librería" />
+		<meta name="Keywords"
+		 content= "libros,libreria" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Javascript --> 
+		<script type="text/javascript" src="../js/js.js" defer="true" ></script>
+		
+		<script type="text/javascript" src="../js/recomendar.js" defer="true" ></script>
+		
+		<!-- Hojas de estilo -->
+		<link rel="stylesheet" href="../css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="../css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="../css/moviles.css" media="screen and (orientation: portrait)" type="text/css" />
+		
+		<!-- links icono y fuente de google -->
+		<link rel="icon" href="../media/img/icon.png" type="image/png"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header id="arriba">
+			<div class="titulo">
+				<img src="../media/img/flechaFantasia.png" alt="Flecha" />
+				<h1>La Librería Friki</h1>
+				<img src="../media/img/flechaFantasia.png"  alt="Flecha" />
+			</div>
+			
+			<img class="muestra" src="../media/img/flechaIzq.png" alt="Img"/>
+			
+			<div class="cambioColor">
+				<div class="usuario">
+					<p class="oculto">Bienvenido, <span id="nombreUsuario"></span></p>
+					<form id="formNombre" name="form_nombre">
+						<input name="user" type="text" placeholder="Insertar Usuario" value="" />
+						<button type="button" id="nombre">Aceptar</button>
+					</form>
+					
+					<img src="../media/img/usuario.png" alt="usuario"/>	
+				</div>
+				<div class="tema">
+					<p>¿Qué tema quieres?</p>
+					<form name="color">
+						<label>
+							<img src="../media/img/colores/naranja.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/general.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/verde.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/verde.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/azul.png" alt="color" class="muestraColor"/>
+							<input type="radio" name="colores" value="../css/azul.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/morado.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/morado.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/rosa.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/rosa.css"/>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="menu">
+				<nav>
+					<ul id="menu">
+						<li><a href="../index.html">Portada</a></li>
+						<li id="desplegar"><a>Categ. Libros</a></li>
+						<ul id="submenu">
+							<li><a href="comic.html">Cómics</a></li>
+							<li><a href="avent.html">Aventuras</a></li>
+							<li><a href="romant.html">Románticas</a></li>
+						</ul>
+						<li><a href="somos.html">Quiénes somos</a></li>
+						<li><a href="recomendados.html">Libros Recom.</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<h2>LIBROS RECOMENDADOS</h2>
+			<div id="recomendados">
+				<div class="libros extrater">
+					<div class="cortina">
+						<h4>Extraterrestre</h4>
+						<p><b>Editorial: </b>Planeta</p>
+						<p><b>Temática: </b>Cosmología</p>
+						<p><b>Páginas: </b>256</p>
+						<button id="0" class="leerSinopsis">Leer sinopsis</button>
+						<p class="sinopOculta sinopsis">En octubre de 2017, científicos del observatorio Haleakala, en Hawái, detectaron un objeto interestelar en movimiento próximo a la Tierra. Primero fue catalogado de cometa, pero esta hipótesis fue descartada.<button class="cerrarSinopsis" value="0">Cerrar</button></p>
+					</div>
+				</div>
+				<div class="libros deseo">
+					<div class="cortina">
+						<h4>Deseo concedido</h4>
+						<p><b>Editorial: </b>Booket</p>
+						<p><b>Temática: </b>Novela romant</p>
+						<p><b>Páginas: </b>512</p>
+						<button id="1" class="leerSinopsis">Leer sinopsis</button>
+						<p class="sinopOculta sinopsis">Lady Megan Philiphs es una joven y bella luchadora que tiene a su cargo a dos hermanos pequeños. La vida no le ha resultado nada fácil, por lo que ha forjado el carácter de una auténtica guerrera que no se doblega ante nada ni nadie. El highlander Duncan McRae, más conocido como el Halcón, es un hombre acostumbrado a liderar ejércitos, librar batallas y salir victorioso de todas ellas.
+						<button class="cerrarSinopsis" value="1">Cerrar</button>
+						</p>
+					</div>
+				</div>
+				<div class="libros emerson">
+					<div class="cortina">
+						<h4>El huerto de Emerson</h4>
+						<p><b>Editorial: </b>Tusquets</p>
+						<p><b>Temática: </b>Novela liter.</p>
+						<p><b>Páginas: </b>240</p>
+						<button id="2" class="leerSinopsis">Leer sinopsis</button>
+						<p class="sinopOculta sinopsis">En El huerto de Emerson asoman personajes de un tiempo aún reciente, pero que parecen pertenecer a un ya lejano entonces, y tan llenos de vida como Pache y su boliche en medio de la nada, mujeres hiperactivas que sostienen a las familias como la abuela y la tía del narrador, hombres callados que de pronto revelan secretos asombrosos, o novios cándidos como Florentino y Cipriana y su enigmático cortejo al anochecer.
+						<button class="cerrarSinopsis" value="2">Cerrar</button>
+						</p>
+					</div>
+				</div>
+				<div class="libros anna">
+					<div class="cortina">
+						<h4>Anna Kadabra</h4>
+						<p><b>Editorial: </b>Destino</p>
+						<p><b>Temática: </b>Infantil</p>
+						<p><b>Páginas: </b>128</p>
+						<button id="3" class="leerSinopsis">Leer sinopsis</button>
+						<p class="sinopOculta sinopsis">¡Se acerca el cumpleaños de Madame Prune! Por desgracia, a Anna y los demás brujos se les acaba el tiempo para pensar en un buen regalo. Es entonces cuando la pandilla se entera de que la maestra perdió a su mascota mágica cuando era una niña. Seguro que nada le haría más ilusión que recuperarla, pero… ¿dónde se esconde?<button class="cerrarSinopsis" value="3">Cerrar</button></p>
+					</div>
+				</div>
+				<div class="libros nunca">
+					<div class="cortina">
+						<h4>Todo lo que nunca fuimos</h4>
+						<p><b>Editorial: </b>Booket</p>
+						<p><b>Temática: </b>Novela Contemp.</p>
+						<p><b>Páginas: </b>352</p>
+						<button id="4" class="leerSinopsis">Leer sinopsis</button>
+						<p class="sinopOculta sinopsis">Leah está rota. Leah ya no pinta. Leah es un espejismo desde el accidente que se llevó a sus padres. Axel es el mejor amigo de su hermano mayor y, cuando accede a acogerla en su casa durante unos meses, quiere ayudarla a encontrar y unir los pedazos de la chica llena de color que un día fue.<button class="cerrarSinopsis" value="4">Cerrar</button></p>
+					</div>
+				</div>
+				<div class="libros mierda">
+					<div class="cortina">
+						<h4>¡A la mierda el amor!</h4>
+						<p><b>Editorial: </b>Cúpula</p>
+						<p><b>Temática: </b>Estilo de vida</p>
+						<p><b>Páginas: </b>168</p>
+						<button id="5" class="leerSinopsis">Leer sinopsis</button>
+						<p class="sinopOculta sinopsis">Si has tenido mala pata en asuntos del corazón o no terminas de encontrarle el punto a esa relación sosaina que tienes con tu pareja... nena, este es tu libro.<button class="cerrarSinopsis" value="5">Cerrar</button></p>
+					</div>
+				</div>
+			</div>
+			<h2 id="oculto">LIBROS RECOMENDADOS POR USUARIOS</h2>
+			<div id="recomendadosUsuario">
+	
+			</div>
+			<div class="recomendar">
+				<h3>Recomiéndanos un libro</h3>
+				<p>En este espacio, podrás recomendar un libro, solo tienes que rellenar las casillas de abajo.</p>
+				<form name="recomiendo">
+					<label for="usuario">Usuario:
+						<input type="text" id="usuario" name="usuario"/>
+					</label>
+					<label for="libro">Título:
+						<input id="libro" type="text" name="libro" required />
+					</label>
+					<label for="opinion">Opinión o sinopsis del libro (SIN SPOILERS):</label>
+					<textarea id="opinion" name="opinion" maxlength="500"></textarea>
+					<p id="max"><span id="contador">0</span>/500</p>
+					<input id="boton" type="button" value="Enviar"/>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<span>Miguel Ángel Cerezuela &copy;2020</span>
+			<span><a href="#">Política de Privacidad</a></span>
+			<span><a href="#">Términos y condiciones</a></span>
+			<a href="#arriba"><img src="../media/img/flechaArriba.png" title="Ir arriba"/></a>
+		</footer>
+	</body>
+ </html>

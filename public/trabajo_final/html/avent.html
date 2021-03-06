@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+	<head>
+		<title>Librería de Aventuras</title>
+		<meta charset="UTF-8" />
+		<meta name= "description"
+		 content="Librería" />
+		<meta name="Keywords"
+		 content= "libros,libreria" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Javascript --> 
+		<script type="text/javascript" src="../js/js.js" defer="true" ></script>
+		
+		<!-- Hojas de estilo -->
+		<link rel="stylesheet" href="../css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="../css/general.css" type="text/css"/>
+		
+		<link rel="stylesheet" href="../css/moviles.css" media="screen and (orientation: portrait)" type="text/css" />
+		
+		<!-- otros link -->
+		<link rel="icon" href="../media/img/icon.png" type="image/png"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header id="arriba">
+			<div class="titulo">
+				<img src="../media/img/flechaFantasia.png" alt="Flecha" />
+				<h1>La Librería Friki</h1>
+				<img src="../media/img/flechaFantasia.png" alt="Flecha" />
+			</div>
+			
+			<img class="muestra" src="../media/img/flechaIzq.png" alt="Img"/>
+			
+			<div class="cambioColor">
+				<div class="usuario">
+					<p class="oculto">Bienvenido, <span id="nombreUsuario"></span></p>
+					<form id="formNombre" name="form_nombre">
+						<input name="user" type="text" placeholder="Insertar Usuario" value="" />
+						<button type="button" id="nombre">Aceptar</button>
+					</form>
+					
+					<img src="../media/img/usuario.png" alt="usuario"/>	
+				</div>
+				<div class="tema">
+					<p>¿Qué tema quieres?</p>
+					<form name="color">
+						<label>
+							<img src="../media/img/colores/naranja.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/general.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/verde.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/verde.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/azul.png" alt="color" class="muestraColor"/>
+							<input type="radio" name="colores" value="../css/azul.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/morado.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/morado.css"/>
+						</label>
+						
+						<label>
+							<img src="../media/img/colores/rosa.png" alt="color" class="muestraColor" />
+							<input type="radio" name="colores" value="../css/rosa.css"/>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="menu">
+				<nav>
+					<ul id="menu">
+						<li><a href="../index.html">Portada</a></li>
+						<li id="desplegar"><a>Categ. Libros</a></li>
+						<ul id="submenu">
+							<li><a href="comic.html">Cómics</a></li>
+							<li><a href="avent.html">Aventuras</a></li>
+							<li><a href="romant.html">Románticas</a></li>
+						</ul>
+						<li><a href="somos.html">Quiénes somos</a></li>
+						<li><a href="recomendados.html">Libros Recom.</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<!-- Menú de navegacion y cabecera -->
+		<section id="avent">
+			<div class="niños">
+				<h2 id="niños">PARA NIÑOS</h2>
+				
+				<h3>El secreto de los Favre</h3>
+				<img src="../media/img/libros/favre.jpg" alt="libro1" />
+				<p class="sinopsis">Dos hermanos gemelos descubren que poseen unas increíbles habilidades que han heredado generaciones en su familia y que los convierten en especiales. Con ayuda de sus poderes se enfrentarán a un misterio que cambiará sus vidas para siempre</p>
+				<p class="sinopsis">Cuando Robert Favre sale de casa para un simple recado, desconoce que ese día va a marcar el resto de su vida y la de su hermano Gael, descubriendo la punta del Iceberg de una serie de portentosas habilidades que serán el hilo conductor de una apasionante saga</p>
+
+				<p class="sinopsis">En este primer libro, los muchachos viajan al pueblo para pasar el verano con sus abuelos. Allí vivirán una apasionante aventura en la que sentirán la fuerza de los lazos de la amistad, encontrarán pasadizos abandonados, visitarán lugares únicos, se enfrentarán a peligros y descubrirán el amor por primera vez. El trepidante y sorprendente desenlace te abrirá el apetito a seguir las próximas entregas de las aventuras de nuestros nuevos amigos.</p>
+				<span class="compra"><a href="">Comprar</a></span>
+				
+				<h3>Los Guardianes 1: El museo de los ladrones</h3>
+				<img src="../media/img/libros/museoLadrones.jpg" alt="libro2" />
+				<p class="sinopsis">Goldie Roth vive en la tiránica ciudad de Alhaja, donde la valentía es un pecado, y la audacia, un crimen. Solo hay una salida para alguien como ella, rebelde y atrevida: huir lejos de allí. En su huida, una figura misteriosa la guiará hacia el mágico y oculto Museo de Coz. Lleno de maravillosos secretos, pero tambien inquietante y oscuro: en sus estancias acecha la sombra de un monstruoso iracán, y solo alguien con el talento de los ladrones podría conducirse a traves de sus extrañas y cambiantes salas.</p>
+				<span class="compra"><a href="">Comprar</a></span>
+			</div>
+			<div class="adolescentes">
+				<h2 id="adol">PARA ADOLESCENTES</h2>
+				
+				<h3>Los Reckoners 1: Steelhearth</h3>
+				<img src="../media/img/libros/steelhearth.jpg" alt="libro3" />
+				<p class="sinopsis">Diez años atrás, Calamity irrumpió en la ciudad en la forma de una explosión en el cielo que otorgó a algunos seres poderes extraordinarios. A estos se los empezó a llamar Épicos, y pronto subyugaron a la población empleando sus increíbles poderes con el afán de gobernar la voluntad de los hombres y conquistar el mundo.</p>
+
+				<p class="sinopsis">Ahora, un tirano y furioso Épico llamado Steelheart se ha proclamado dueño y señor de la ciudad de Chicago Nova. De él se dice que es invencible; ninguna bala puede hacerle daño, ninguna espada puede atravesar su piel, ningún fuego quemar su cuerpo. Nadie se atreve a desafiarlo... Nadie salvo los Reckoners, un grupo clandestino que no goza de poderes pero sí de una férrea disciplina, conseguida tras pasarse la vida estudiando el comportamiento de los Épicos con el objetivo de hallar sus puntos débiles y poder así exterminarlos.</p>
+
+				<p class="sinopsis">El joven David Charleston se unirá a ellos con el fin de vengar la muerte de su padre a manos de Steelheart. El chico tiene una cualidad que le distingue del resto: sabe que el Épico no es invencible. David es el único que ha visto sangrar a Steelheart.</p>
+				<span class="compra"><a href="">Comprar</a></span>
+				
+				<h3>Todas las hadas del reino</h3>
+				<img src="../media/img/libros/hadas.jpg" alt="libro4" />
+				<p class="sinopsis">Camelia es un hada madrina que lleva trescientos años ayudando con gran eficacia a jóvenes doncellas y a aspirantes a héroe para que alcancen sus propios finales felices. Su magia y su ingenio nunca le han fallado, pero todo empieza a complicarse cuando le encomiendan a Simón, un mozo de cuadra que necesita su ayuda desesperadamente. Camelia ha solucionado casos más difíciles; pero, por algún motivo, con Simón las cosas comienzan a torcerse de forma inexplicable...</p>
+				<span class="compra"><a href="">Comprar</a></span>
+			</div>
+			<div class="adultos">
+				<h2 id="adul">PARA ADULTOS</h2>
+				
+				<h3>La Erupción Zafiro</h3>
+				<img src="../media/img/libros/erupcion.jpg" alt="libro5" />
+				
+				<p class="sinopsis">Un año más los cielos se han teñido de rojo, es hora de que los sacerdotes realicen su ritual: un corte con el afilado filo de una de las espadas sagradas de fuego en las palmas de todos los recién nacidos, pues el heredero del trono del Reino de Fuego no derramará una gota de sangre.</p>
+
+				<p class="sinopsis">El recién nacido Noakhail había sido elegido, y lo que debió haber sido un festejo se convirtió en una traición manchada de sangre que obligará a su padre a huir con él para salvarle la vida. Ahora, Noakhail es un experto espadachín, y volverá para reclamar la corona. Pero para eso antes debe enfrentarse a las criaturas y enemigos más poderosos de los cuatro reinos. Si sobrevive a tal dura prueba, reclamar el trono debería ser sencillo.</p>
+
+				<p class="sinopsis">La tímida princesa Vienne es maltratada por sus hermanas mayores, ella no podría ser más inapropiada para gobernar el Reinado del Agua. Sin embargo, el Aqua Deus puede ser caprichoso… Vienne tendrá que demostrar que es capaz de controlar los poderes de la sagrada espada de agua, y de llevar la corona con orgullo.</p>
+				<span class="compra"><a href="">Comprar</a></span>
+				
+				<h3>Crónicas de la Torre 1: El Valle de los Lobos</h3>
+				<img src="../media/img/libros/valle.jpg" alt="libro6" />
+				<p class="sinopsis">Dana, una joven granjera, es requerida por un misterioso Maestro y conducida a la Torre, en el remoto Valle de los Lobos. Tiempo atrás, la Torre fue una brillante escuela de alta hechicería, pero hoy apenas tres personas habitan en ella. Además del propio Maestro y de la cocinera, el único aprendiz que estudia en la Torre es un reservado elfo con un oscuro pasado. Pero la propia Dana también tiene secretos. A su lado está siempre Kai, su mejor amigo, su confidente, su protector… un muchacho a quien sólo ella puede ver. Mientras se inicia en los misterios de la magia ancestral de la Torre, Dana descubre que sobre el lugar pesa una antigua maldición…</p>
+				<span class="compra"><a href="">Comprar</a></span>
+			</div>
+		</section>
+		<!-- Seccion dividida en partes -->
+		<footer>
+			<span>Miguel Ángel Cerezuela &copy;2020</span>
+			<span><a href="#">Política de Privacidad</a></span>
+			<span><a href="#">Términos y condiciones</a></span>
+			<a href="#arriba"><img src="../media/img/flechaArriba.png" title="Ir arriba"/></a>
+		</footer>
+		<!-- footer con terminos y politicas (copyright) -->
+	</body>
+ </html>

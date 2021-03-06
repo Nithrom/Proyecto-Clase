@@ -1,0 +1,17 @@
+- Cada lenguaje en archivo propio
+- Poner comentarios
+- Temática Libre
+- Etiquetas semánticas en HTML y validar el archivo HTML, aparecerá algún video e imágenes
+- Al menos habrá un formulario
+- En funcion de las opciones del menú se haran tantas páginas como sea necesario
+___________________________________________________________________________________________
+- CSS usar tipografias de google y descargadas
+- Diseño adaptable en movil
+- Alguna transicion o animacion
+- Validar CSS
+____________________________________________________________________________________________
+
+-JS, funciones, estructuras condicionales y de bucle
+
+Subir el archivo a nuestro espacio en una carpeta llamada trabajo (el primer html se llamará index)
+El tiempo será hasta el 4 de marzo

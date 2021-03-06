@@ -1,0 +1,122 @@
+﻿body{
+	background-color:#D8BAFD;
+}
+div.cambioColor .usuario p{
+	color:#A96EF2;
+}
+div.tema p{
+	color:#D8BAFD;
+}
+div.menu ul#menu li a{
+	color:#A96EF2;
+	border-right:0.1em solid #D8BAFD;
+}
+div.menu ul#menu li a:hover{
+	color:#D8BAFD;
+	border:0.1em solid #A96EF2;
+	text-shadow:0.1em 0.1em 0.2em #A96EF2;
+}
+div.menu ul#submenu li a{
+	border-top:0.1em solid #D8BAFD;
+}
+section h2{
+	background-color:#D8BAFD;
+}
+section#index{
+	column-rule:0.4em double #D8BAFD;
+}
+section#index span a{
+	color:#A96EF2;
+}
+section#index span a:hover{
+	color:#D8BAFD;
+}
+section h3{
+	border-bottom:0.4em double #9D65E2;
+	color:#9D65E2;
+}
+section#comic img,section#avent img,section#romant img{
+	border-right:4px double #9D65E2;
+}
+span.compra a{
+	background-color:#D8BAFD;
+	border:0.2em solid #9D65E2;
+	box-shadow:inset -0.2em -0.2em 0.2em #9D65E2;
+}
+span.compra a:hover{
+	background-color:#9D65E2;
+	box-shadow:inset -0.2em -0.2em 0.2em #D8BAFD;
+}
+#somos iframe{
+	border:0.4em double #9D65E2;
+}
+div#recomendados .cortina h4{
+	background-color:#D8BAFD;
+}
+#recomendados .cortina button{
+	border:0.2em solid #9D65E2;
+	background-color:#D8BAFD;
+}
+#recomendados .cortina button:hover{
+	border:0.2em solid #D8BAFD;
+	background-color:#9D65E2;
+}
+div.recomendar input{
+	border:0.2em solid #9D65E2;
+}
+div.recomendar input:focus{
+	border:0.2em solid #D8BAFD;
+}
+div.recomendar textarea{
+	border:0.2em solid #9D65E2;
+}
+div.recomendar textarea:focus{
+	border:0.2em solid #D8BAFD;
+}
+.usuario form input{
+	border:0.2em solid #9D65E2;
+}
+.usuario form input:focus{
+	border:0.2em solid #D8BAFD;
+}
+.usuario form button{
+	border:0.2em solid #9D65E2;
+	background-color:#D8BAFD;
+}
+.usuario form button:hover{
+	border:0.2em solid #D8BAFD;
+	background-color:#9D65E2;
+}
+
+#recomendados .cortina span,#recomendados .cortina .cerrarSinopsis{
+	border:0.2em solid #9D65E2;
+	background-color:#D8BAFD;
+}
+#recomendados .cortina span:hover{
+	border:0.2em solid #D8BAFD;
+	background-color:#9D65E2;
+}
+div#recomendados .cortina button:hover{
+	border:0.2em solid #D8BAFD;
+	background-color:#9D65E2;
+}
+.recomendar #boton{
+	border:0.2em solid #9D65E2;
+	background-color:#D8BAFD;
+}
+.recomendar #boton:hover{
+	border:0.2em solid #D8BAFD;
+	background-color:#9D65E2;
+}
+footer{
+	color:#D8BAFD;
+}
+footer span{
+	border-right:0.1em solid #D8BAFD;
+}
+footer span a{
+	color:#D8BAFD;
+}
+footer span a:hover{
+	color:#8043CA;
+}
