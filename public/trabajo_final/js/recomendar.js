@@ -6,6 +6,7 @@ var enviarLibro=document.getElementById('boton');
 var recomendar=document.getElementById('recomendadosUsuario');
 /* Variables recomendar libro */
 
+var maxCaracteres=document.getElementById('max');
 var caracteres=document.getElementById('contador');
 var maxCar=500;
 /* Variables contador */
@@ -111,21 +112,13 @@ function mostrarNombre(){
 }
 /* Funcion para mostrar el nombre */
 
-function contador(cadena){
-	caracteres.innerText=cadena.length;
-	if(cadena.length==maxCar){
-		max.style.color="red";
-	}
-	else{
-		max.style.color="black";
-	}
-}
-/* Funcion para limite de caracteres */
-
 botonNombre.addEventListener("click",mostrarNombre);
 
-texto.addEventListener("keyup",function(){contador(this.value);});
+texto.addEventListener("keyup",function(){contador(this.value)});
 
-texto.addEventListener("keydown",function(){contador(this.value);});
+texto.addEventListener("keydown",function(){contador(this.value)});
 
 enviarLibro.addEventListener("click",recomendado);
+
+
+

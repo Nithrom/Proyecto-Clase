@@ -70,17 +70,19 @@ div.tema form img.muestraColor{
 div.menu{
 	font-size:1em;
 }
+div.menu ul#menu li{
+	width:50%;
+}
 div.menu ul#menu>li a{
 	padding-top:1em;
 	padding-bottom:1em;
 }
-div.menu ul#menu>li:first-child a{
-	padding-top:1.6em;
-	padding-bottom:1.6em;
-}
 div.menu ul#submenu{
-	width:24.9%;
-	left:24.9%;
+	width:100%;
+	left:25%;
+}
+div.menu ul#submenu li{
+	width:200%;
 }
 
 /* Section General */
@@ -140,7 +142,7 @@ div#recomendados .libros:first-child .sinopOculta{
 	color:black;
 	position:absolute;
 	left:0%;
-	top:78%;
+	top:83%;
 }
 div#recomendados .libros:nth-child(2) .sinopOculta{
 	width:95%;
@@ -149,7 +151,7 @@ div#recomendados .libros:nth-child(2) .sinopOculta{
 	color:black;
 	position:absolute;
 	left:0%;
-	top:78%;
+	top:83%;
 }
 div#recomendados .libros:nth-child(3) .sinopOculta{
 	width:95%;
@@ -158,7 +160,7 @@ div#recomendados .libros:nth-child(3) .sinopOculta{
 	color:black;
 	position:absolute;
 	left:0%;
-	top:78%;
+	top:83%;
 }
 div#recomendados .libros:nth-child(4) .sinopOculta{
 	width:95%;
@@ -167,7 +169,7 @@ div#recomendados .libros:nth-child(4) .sinopOculta{
 	color:black;
 	position:absolute;
 	left:0%;
-	top:78%;
+	top:83%;
 }
 div#recomendados .libros:nth-child(5) .sinopOculta{
 	width:95%;
@@ -176,7 +178,7 @@ div#recomendados .libros:nth-child(5) .sinopOculta{
 	color:black;
 	position:absolute;
 	left:0%;
-	top:78%;
+	top:83%;
 }
 div#recomendados .libros:last-child .sinopOculta{
 	width:95%;
@@ -185,10 +187,10 @@ div#recomendados .libros:last-child .sinopOculta{
 	color:black;
 	position:absolute;
 	left:0%;
-	top:78%;
+	top:83%;
 }
 div#recomendados .libros:nth-child(4){
-	margin-bottom:7.5em;
+	margin-bottom:30%;
 }
 div#recomendados div.libros button.cerrarSinopsis{
 	margin-top:2%;
