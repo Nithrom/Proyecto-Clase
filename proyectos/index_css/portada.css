@@ -1,7 +1,15 @@
 ﻿/* GENERALES */
 @font-face{
-	font-family:titulo;
+	font-family:nombre;
 	src:url("font/Nebulous.ttf");
+}
+@font-face{
+	font-family:texto;
+	src:url("font/sunshine.ttf");
+}
+@font-face{
+	font-family:titulo;
+	src:url("font/fun.otf");
 }
 *{
 	margin:0;
@@ -9,239 +17,97 @@
 	box-sizing:border-box;
 }
 body{
-	background:linear-gradient(#E1F7FD,#8CE5FF);
-	overflow:hidden;
-	background-color:black;
+	background-image:url(img/bg.png);
+	background-size:100%;
+	padding:1.5%;
 }
 
-/* CONTENIDO CABECERA */
+/* CONTENIDO */
 
-div#contenido{
-	width:75%;
-	margin:0 auto;
-	margin-top:3%;
-	padding-bottom:2%;
-	background-color:white;
-	font-family:arial;
-	border-top-left-radius:2em;
-	border-top-right-radius:2em;
-	overflow:hidden;
-}
-div#contenido h1{
-	background:linear-gradient(45deg,#D9EFFF,#B1DEFF,#D9EFFF,#B1DEFF,#D9EFFF,#B1DEFF,#D9EFFF,#B1DEFF,#D9EFFF,#B1DEFF,#D9EFFF,#B1DEFF,#D9EFFF,#B1DEFF,#D9EFFF,#B1DEFF);/* colores no navideños: #8369B6,#3B1783,#8369B6,#3B1783,#8369B6*/
-	margin:0 auto;
-	font-size:5em;
-	font-family:titulo;
-	padding-top:1%;
-	color:white;
-	padding-bottom:1%;
-	border-bottom-left-radius:0.3em;
-	border-bottom-right-radius:0.3em;
-	font-weight:bold;
-	text-align:center;
-	text-shadow:0.05em 0.05em 0.05em #4581CD;/* color no navideño: #C6AAFF */
-}
-div#contenido div.muerdago_uno{
-	position:absolute;
-	left:8%;
-	top:6%;
-	transform:rotate(220deg);
-	width:10%;
-}
-div#contenido div.muerdago_dos{
-	position:absolute;
-	right:8%;
-	top:8%;
-	transform:rotate(160deg);
-	width:10%;
-}
-div#contenido div.muerdago_dos img,div#contenido div.muerdago_uno img{
-	width:100%;
-}
-div#contenido div[class*="muerdago"]:hover img{
-	animation-name:muerdago;
-	animation-duration:1.5s;
-}
-@keyframes muerdago{
-	0%{
-		transform:rotate(4deg);
-	}
-	20%{
-		transform:rotate(-8deg);
-	}
-	40%{
-		transform:rotate(4deg);
-	}
-	60%{
-		transform:rotate(-8deg);
-	}
-	80%{
-		transform:rotate(4deg);
-	}
-	100%{
-		transform:rotate(0deg);
-	}
-}
-
-/*CONTENIDO IMAGENES */
-
-div#contenido div.img{
+div.paper{
+	margin:1%;
 	float:left;
-	position:relative;
-	width:30%;
-	border-radius:50%;
-	margin:1.6666667%;
-	margin-top:3%;
-	overflow:hidden;
-	transform:scale(0.8);
-	transition-property:transform;
-	transition-duration:1s;
-	border:0.2em double  #8CE5FF;/* color no navideño:#C6AAFF */
+	width:50%;
+	background-image:url(img/hoja.png);
+	background-size:90%;
+	background-repeat:no-repeat;
 }
-div#contenido div.img:hover{
-	transform:scale(1);
+div.paper>h1{
+	font-size:4em;
+	padding-top:5.2%;
+	margin-bottom:-0.5%;
+	text-align:center;
+	font-family:titulo;
 }
-div#contenido div.img a{
-	display:block;
-	width:100%;
-	border-radius:50%;
+div.paper>h3{
+	font-size:1.8em;
+	text-align:center;
+	font-family:texto;
+	margin-bottom:1.2%;
 }
-div#contenido div.img img{
-	width:100%;
-	border-radius:50%;
+div.paper>ul{
+	margin-left:12%;
+}
+div.paper>ul li{
+	font-size:1.5em;
+	padding-bottom:2.4%;
+	font-family:texto;
+	list-style-image:url(img/asterisco1.png);
+	list-style-position:inside;
+	font-weight:bold;
+}
+div.paper>ul li:last-child{
+	padding-bottom:1%;
+}
+div.paper>ul li a{
+	text-decoration:none;
+	color:black;
+	padding:0.2em;
+	transition-property:background-color;
+	transition-duration:500ms;
 }
 
-div.img div.fondo{
-	width: 100%;
-	height:100%;
-	border-radius:50%;
-	background-image:url(img/bola.png);/* no navideño;: background-color:rgba(255,255,255,0.6); */
-	background-repeat:no-repeat;
-	background-size:cover;
-	opacity:0.6; /* Quitar cuando sea no navideño */
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	transition-property:visibility,opacity; /* no navideño: background-color */
-	transition-duration:750ms;
+div.paper>ul li:hover a{
+	background-color:rgba(255,255,0,0.6);
+	text-decoration:none;
+	color:black;
 }
-div.img:hover div.fondo{
-	opacity:0;/* no navideño: background-color:rgba(255,255,255,0); */
-	visibility:hidden;
+div.img{
+	margin-left:11.5%;
+	width:75%;
+	height:210px;
+	margin-bottom:10%;
 }
-div.clear{
+div.img img{
+	width:88%;
+	display:block;
+	margin:0 auto;
+	border-radius:1em;
+}
+div.name{
+	font-family:nombre;
+	font-size:4em;
+	margin-top:1%;
+	width:48%;
+	float:left;
+}
+div.name img{
+	display:block;
+	margin-left:15%;
+	width:40%;
+	border-radius:3em;
+}
+
+/* FOOTER NO NAVIDEÑO */
+footer{
+	width:100%;
+	position:fixed;
+	bottom:1%;
+	font-size:1.2em;
 	clear:both;
 }
-
-/* CONTENIDO TEXTO */
-
-div#contenido p[class*="e"]{
-	text-align:justify;
-	float:left;
-	position:relative;
-	top:-20%;
-	width:30%;	
-	margin:0.5% 1.66667%;
-	margin-top:0;
-	padding:0.5em;
-	border-radius:1em;
-	border:0.2em double #8CE5FF;/* color no navideño: #C6AAFF */
-	visibility:hidden;
-	opacity:0;
-	transition-property:opacity,visibility;
-	transition-duration:0.8s;
-}
-div#facebook{
-	background-color:#4267B2;
-}
-div#facebook:hover~div.texto p.facebook{
-	visibility:visible;
-	opacity:1;
-}
-div#cosmere:hover~div.texto p.cosmere{
-	visibility:visible;
-	opacity:1;
-}
-div#taller:hover~div.texto p.taller{
-	visibility:visible;
-	opacity:1;
-}
-
-/*FOOTER NAVIDEÑO*/
-
-div.navidad{
-	position:fixed;
-	width:14%;
-	z-index:10;
-}
-div.navidad img{
-	width:100%;
-}
-div#arbol{
-	bottom:0;
-	left:0;
-}
-div#muñeco{
-	bottom:0;
-	right:0;
-}
-div.relleno{
-	height:500px;
-}
-footer{
-	width:100%;
-	position:absolute;
-	bottom:0;
-	z-index:1;
-	background-image:url(img/nieve.png);
-	background-size:cover;
-}
 footer span{
 	display:block;
-	font-size:1.1em;
 	font-variant:small-caps;
-	font-weight:bold;
-	padding-top:2em;
-	padding-bottom:1em;
-	text-align:center;
+
 }
-footer span a{
-	text-decoration:none;
-	color:gray;
-	text-shadow:0 0 0.1em #8CE5FF;
-	transition-property:color,text-shadow;
-	transition-duration:500ms;
-}
-footer span a:hover{
-	color:#8CE5FF;
-	text-shadow:0 0 0.1em #E1F7FD;
-}
-/* FOOTER NO NAVIDEÑO */
-/*
-footer{
-	width:100%;
-	font-size:1.1em;
-	position:absolute;
-	bottom:0;
-	background-color:black;
-}
-footer span{
-	display:block;
-	padding:1.5em;
-	color:white;
-	font-variant:small-caps;
-	text-align:center;
-}
-footer span a{
-	text-decoration:none;
-	color:gray;
-	text-shadow:0 0 0.1em #C6AAFF;
-	transition-property:color,text-shadow;
-	transition-duration:500ms;
-}
-footer span a:hover{
-	color:#8CE5FF;
-	text-shadow:0 0 0.1em #8369B6;
-}
-*/
