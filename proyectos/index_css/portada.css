@@ -24,9 +24,25 @@ body{
 
 /* CONTENIDO */
 
+div.name{
+	font-family:nombre;
+	font-size:4em;
+	margin-top:1%;
+	width:48%;
+	float:right;
+}
+div.name img{
+	display:block;
+	margin-left:15%;
+	width:40%;
+	border-radius:3em;
+}
+div.name h1{
+	padding-top:2%;
+}
 div.paper{
 	margin:1%;
-	float:left;
+	float:right;
 	width:50%;
 	background-image:url(img/hoja.png);
 	background-size:90%;
@@ -49,8 +65,9 @@ div.paper>ul{
 	margin-left:12%;
 }
 div.paper>ul li{
+	width:51%;
 	font-size:1.5em;
-	padding-bottom:2.4%;
+	margin-bottom:2.4%;
 	font-family:texto;
 	list-style-image:url(img/asterisco1.png);
 	list-style-position:inside;
@@ -66,7 +83,6 @@ div.paper>ul li a{
 	transition-property:background-color;
 	transition-duration:500ms;
 }
-
 div.paper>ul li:hover a{
 	background-color:rgba(255,255,0,0.6);
 	text-decoration:none;
@@ -84,18 +100,32 @@ div.img img{
 	margin:0 auto;
 	border-radius:1em;
 }
-div.name{
-	font-family:nombre;
-	font-size:4em;
-	margin-top:1%;
-	width:48%;
-	float:left;
+.aparece{
+	animation-name:aparece;
+	animation-duration:500ms;
+	animation-fill-mode:forwards;
 }
-div.name img{
-	display:block;
-	margin-left:15%;
-	width:40%;
-	border-radius:3em;
+@keyframes aparece{
+	0%{
+		height:0%;
+	}
+	100%{
+		height:100%;
+	}
+}
+.desaparece{
+	animation-name:desaparece;
+	animation-duration:500ms;
+	animation-fill-mode:forwards;
+	display:none;
+}
+@keyframes desaparece{
+	0%{
+		height:100%;
+	}
+	100%{
+		height:0%;
+	}
 }
 
 /* FOOTER NO NAVIDEÑO */
