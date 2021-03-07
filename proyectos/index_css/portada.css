@@ -74,7 +74,7 @@ div.paper>ul li{
 	font-weight:bold;
 }
 div.paper>ul li:last-child{
-	padding-bottom:1%;
+	padding-bottom:0.5%;
 }
 div.paper>ul li a{
 	text-decoration:none;
@@ -92,13 +92,16 @@ div.img{
 	margin-left:11.5%;
 	width:75%;
 	height:210px;
-	margin-bottom:10%;
+	margin-bottom:11%;
 }
 div.img img{
 	width:88%;
 	display:block;
 	margin:0 auto;
 	border-radius:1em;
+}
+div.img img+img{
+	display:none;
 }
 .aparece{
 	animation-name:aparece;
@@ -154,12 +157,13 @@ footer span{
 		float:none;
 	}
 	div.name img{
+		width:35%;
 		display:block;
 		margin:0 auto;
 	}
 	div.name h1{
 		padding-bottom:2%;
-		font-size:1.2em;
+		font-size:1em;
 		text-align:center;
 		margin:0 auto;
 	}
@@ -167,11 +171,12 @@ footer span{
 		float:none;
 		margin:0 auto;
 		padding-left:5%;
-		width:85%;
+		width:95%;
 		background-size:100%;
+		padding-bottom:15%;
 	}
 	div.paper>h1{
-		font-size:3em;
+		font-size:2.8em;
 		padding-top:5%;
 		text-align:center;
 		font-family:titulo;
@@ -188,15 +193,75 @@ footer span{
 		margin-bottom:0.9%;
 	}
 	div.img{
+		position:relative;
 		margin:0 auto;
-		width:100%;
-		margin-bottom:15%;
+		width:90%;
 	}
 	div.img img{
+		position:absolute;
 		width:100%;
 		display:block;
 		margin:0 auto;
 		border-radius:1em;
+		transition-property:opacity,visibility;
+		transition-duration:0.5s;
+	}
+	div.img img+img{
+		display:block;
+	}
+	div.img img:nth-child(2){
+		animation-name:animationImg;
+		animation-duration:15s;
+		animation-direction:alternate-reverse;
+		animation-iteration-count:infinite;
+		animation-delay:15s;
+	}
+	div.img img:nth-child(3){
+		animation-name:animationImg;
+		animation-duration:15s;
+		animation-direction:alternate-reverse;
+		animation-iteration-count:infinite;
+		animation-delay:11s;
+	}
+	div.img img:nth-child(4){
+		animation-name:animationImg;
+		animation-duration:15s;
+		animation-direction:alternate-reverse;
+		animation-iteration-count:infinite;
+		animation-delay:7s;
+	}
+	div.img img:last-child{
+		animation-name:animationImg;
+		animation-duration:15s;
+		animation-direction:alternate-reverse;
+		animation-iteration-count:infinite;
+		animation-delay:3s;
+	}
+	
+	@keyframes animationImg{
+		0%{
+			opacity:1;
+			visibility:visible;
+		}
+		20%{
+			opacity:0;
+			visibility:hidden;
+		}
+		50%{
+			opacity:0;
+			visibility:hidden;
+		}
+		80%{
+			opacity:0;
+			visibility:hidden;
+		}
+		100%{
+			opacity:1;
+			visibility:visible;
+		}
+	}
+	footer{
+		position:relative;
 	}
 	footer span{
 		text-align:center;
