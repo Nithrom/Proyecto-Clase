@@ -262,7 +262,7 @@ footer span{
 	}
 	footer{
 		position:relative;
-		margin-bottom:1em;
+		padding-bottom:1em;
 	}
 	footer span{
 		text-align:center;
