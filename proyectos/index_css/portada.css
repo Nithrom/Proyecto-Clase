@@ -42,7 +42,7 @@ div.name h1{
 }
 div.paper{
 	margin:1%;
-	float:right;
+	float:left;
 	width:50%;
 	background-image:url(img/hoja.png);
 	background-size:90%;
@@ -128,7 +128,7 @@ div.img img{
 	}
 }
 
-/* FOOTER NO NAVIDEÑO */
+/* FOOTER */
 footer{
 	width:100%;
 	position:fixed;
@@ -139,5 +139,66 @@ footer{
 footer span{
 	display:block;
 	font-variant:small-caps;
+}
 
+/* Ajustes para móviles */
+@media screen and (orientation:portrait) {
+	body{
+		background-image:url(img/bg_phone.jpg);
+		background-size:cover;
+		background-repeat:no-repeat;
+		padding:1.5%;
+	}
+	div.name{
+		width:100%;
+		float:none;
+	}
+	div.name img{
+		display:block;
+		margin:0 auto;
+	}
+	div.name h1{
+		padding-bottom:2%;
+		font-size:1.2em;
+		text-align:center;
+		margin:0 auto;
+	}
+	div.paper{
+		float:none;
+		margin:0 auto;
+		padding-left:5%;
+		width:85%;
+		background-size:100%;
+	}
+	div.paper>h1{
+		font-size:3em;
+		padding-top:5%;
+		text-align:center;
+		font-family:titulo;
+	}
+	div.paper>h3{
+		font-size:1.4em;
+	}
+	div.paper>ul{
+		margin-left:12%;
+	}
+	div.paper>ul li{
+		width:90%;
+		font-size:1.3em;
+		margin-bottom:0.9%;
+	}
+	div.img{
+		margin:0 auto;
+		width:100%;
+		margin-bottom:15%;
+	}
+	div.img img{
+		width:100%;
+		display:block;
+		margin:0 auto;
+		border-radius:1em;
+	}
+	footer span{
+		text-align:center;
+	}	
 }
