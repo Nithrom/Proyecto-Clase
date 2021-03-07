@@ -148,8 +148,7 @@ footer span{
 @media screen and (orientation:portrait) {
 	body{
 		background-image:url(img/bg_phone.jpg);
-		background-size:cover;
-		background-repeat:no-repeat;
+		background-size:100%;
 		padding:1.5%;
 	}
 	div.name{
@@ -162,7 +161,7 @@ footer span{
 		margin:0 auto;
 	}
 	div.name h1{
-		padding-bottom:2%;
+		padding-bottom:1%;
 		font-size:1em;
 		text-align:center;
 		margin:0 auto;
@@ -185,6 +184,7 @@ footer span{
 	}
 	div.paper>ul{
 		margin-left:12%;
+		margin-bottom:2%;
 	}
 	div.paper>ul li{
 		width:90%;
@@ -260,8 +260,8 @@ footer span{
 		}
 	}
 	footer{
-		font-size:1em;
 		position:relative;
+		font-size:1.2em;
 	}
 	footer span{
 		text-align:center;
