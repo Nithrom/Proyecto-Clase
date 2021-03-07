@@ -173,7 +173,6 @@ footer span{
 		padding-left:5%;
 		width:95%;
 		background-size:100%;
-		padding-bottom:15%;
 	}
 	div.paper>h1{
 		font-size:2.8em;
@@ -186,6 +185,7 @@ footer span{
 	}
 	div.paper>ul{
 		margin-left:12%;
+		margin-bottom:2%;
 	}
 	div.paper>ul li{
 		width:90%;
@@ -262,6 +262,7 @@ footer span{
 	}
 	footer{
 		position:relative;
+		margin-bottom:1em;
 	}
 	footer span{
 		text-align:center;
